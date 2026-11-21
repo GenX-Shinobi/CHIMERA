@@ -1,6 +1,6 @@
 # CHIMERA
 
-**Controlled Hierarchical Intelligence, Modularity, Efficiency, Resilience & Adaptation**
+**Working acronym expansion:** Controlled Hierarchical Intelligence, Modularity, Efficiency, Resilience & Adaptation
 
 Open-source, free-to-use, platform-independent framework for building, governing, and coordinating reusable AI workforces.
 
