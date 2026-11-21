@@ -2,7 +2,7 @@
 
 **Checkpoint:** 2026-11-21  
 **Repository:** https://github.com/GenX-Shinobi/CHIMERA  
-**Baseline:** initial documentation foundation; implementation has not begun.
+**Baseline:** initial documentation foundation; implementation has not begun. Documentation PR #1 is open for owner review: https://github.com/GenX-Shinobi/CHIMERA/pull/1.
 
 ## Established
 - CHIMERA is a separate public repository, independent of AI Prompt Builder Hub.
@@ -32,4 +32,4 @@ Its v5.4.0 release must pass its own gates and receive owner approval before CHI
 5. Do not claim background work or local Claude workspace state unless checked.
 
 ## Single next action
-Ask the owner to decide O-001 in docs/DECISIONS.md. Then continue governance design one decision at a time.
+Review and approve the initial documentation PR when satisfied. After that, ask the owner to decide O-001 in docs/DECISIONS.md. Then continue governance design one decision at a time.
