@@ -3,7 +3,7 @@
 **Checkpoint:** 2026-11-21  
 **Repository:** https://github.com/GenX-Shinobi/CHIMERA  
 **Current state:** planning/documentation only; implementation and testing paused until AI Prompt Builder Hub v5.4.0 is publicly released and a separate Owner-authorized CHIMERA milestone is established.  
-**GitHub:** documentation PR #1 remains open and unmerged: https://github.com/GenX-Shinobi/CHIMERA/pull/1. Branch `docs/foundation-roadmap-memory`; verify its live head before acting.
+**GitHub:** documentation PR #1 remains open and unmerged: https://github.com/GenX-Shinobi/CHIMERA/pull/1. Branch `docs/foundation-roadmap-memory` at `8b34eff35f26b5c7b150f41a2fac818dd71f1daa` before this handoff refresh; 15 commits ahead of `main`, 0 behind. Verify the live head before acting.
 
 ## Owner-approved priority order
 1. Complete documentation maintenance and session handoffs for both repositories.
