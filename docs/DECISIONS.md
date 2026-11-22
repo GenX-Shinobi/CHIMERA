@@ -41,7 +41,7 @@ This register separates owner-approved decisions from unresolved questions. See 
 | O-007 | Exact implementation mechanics for the append-only, tamper-evident chronicle. | Must be independently verifiable and recoverable. |
 | O-008 | Detailed Administrator inspection, correction, quarantine, suspension and restoration powers. | Define precise operational boundaries, approval thresholds, review and appeal/escalation. |
 | O-009 | Detailed lesson indexing, retrieval, transfer and retirement mechanics. | Preserve institutional learning while controlling project isolation and overhead. |
-| O-010 | Future milestones and acceptance criteria after the current pause. | CHIMERA work remains paused until Prompt Builder v5.4.0 is publicly released. |
+| O-010 | Future milestones and acceptance criteria after the current pause. | Public release verified 2026-11-22; future milestones still require separate Owner authorization. |
 
 ## Exploratory backlog — not approved requirements
 

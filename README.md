@@ -6,7 +6,7 @@ An open-source, free-to-use, platform-independent framework for building, govern
 
 ## Project status
 
-CHIMERA is in its governance and documentation planning stage. Implementation is paused until AI Prompt Builder Hub v5.4.0 is publicly released and the Owner separately authorizes the next CHIMERA milestone.
+CHIMERA is in its governance and documentation planning stage. Prompt Builder v5.4.0 was publicly released on 2026-11-21. The Owner authorized CH-FOUNDATION-01 on 2026-11-22 for documentation reconciliation only. Runtime implementation and pilot integration remain unauthorized.
 
 ## Start here
 

@@ -1,6 +1,6 @@
 # CHIMERA MEMORY — Architecture Notes
 
-**Status:** Approved design direction; detailed schema and implementation remain open.  
+**Status:** Approved design direction; detailed schema and implementation remain open. CH-FOUNDATION-01 (2026-11-22) reconciles documentation only; no memory implementation or access-control mechanism is authorized.  
 **Parent record:** [MEMORY.md](../MEMORY.md)
 
 ## Design goal

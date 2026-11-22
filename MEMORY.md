@@ -3,7 +3,7 @@
 **Purpose:** Durable, human-readable continuity record.  
 **Authority:** This file records context and decisions; it does not grant permissions or override statutes.  
 **Repository:** https://github.com/GenX-Shinobi/CHIMERA  
-**Checkpoint:** 2026-11-21
+**Checkpoint:** 2026-11-22 — CH-FOUNDATION-01
 
 ## Identity and mission
 - Project: **CHIMERA** — **Controlled Hierarchical Intelligence, Modularity, Efficiency, Resilience & Adaptation**. The acronym expansion is formally approved.
@@ -57,7 +57,7 @@ Memory should be portable, human-readable and versioned. Preserve provenance and
 ## Separate project: AI Prompt Builder Hub
 - Repository: https://github.com/GenX-Shinobi/Prompt-Builder
 - Its mission, architecture, release gates and authority remain governed by its own repository documents.
-- v5.4.0 is not yet publicly released. Complete its release closeout first. CHIMERA implementation and integration remain paused until public release and separate Owner authorization.
+- v5.4.0 was publicly released on 2026-11-21 ([release](https://github.com/GenX-Shinobi/Prompt-Builder/releases/tag/v5.4.0)). CH-FOUNDATION-01 is authorized for documentation reconciliation only; implementation and integration require separate authorization. Private Prompt Builder evidence preservation remains separate.
 - After v5.4.0 is public, future Prompt Builder roadmap work may be considered as practical CHIMERA test material under a separate bounded plan.
 - CHIMERA does not inherit Prompt Builder project rules or release authority; Prompt Builder does not automatically inherit CHIMERA employee or memory permissions.
 
