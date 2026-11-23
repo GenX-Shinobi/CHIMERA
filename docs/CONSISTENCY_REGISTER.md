@@ -21,7 +21,7 @@ Severity is as recorded in the audit. "Supporting approvals" are existing approv
 | F-C | CRITICAL | Administrator conflicts of interest need an independently controlled reviewer/evidence and Owner fallback. | X-4, X-5, X-6; INS-R2, INS-AT-09; COR-C4; QUA-AT-07; SUS-AT-01; RES-AT-04, RES-AT-14; A2; ACC-AT-15 | SR-5, SR-7 | [OD-05 approved](#od-05--independent-review-of-administrator-conflicts). Enforcement remains open under OD-10. |
 | F-D | HIGH | Containment and restoration require authoritative shared state and restriction precedence. | X-3 / RES-C1; QUA-AT-02; SUS-AT-05; RES-AT-01 | SR-2 | Revised rule approved in [OD-08](#od-08--overlapping-restrictions). Storage and enforcement remain open. |
 | F-E | HIGH | Protected evidence handling needs a common provenance, access, retention and review specification. | D-021, D-022; X-10; INS-R1, INS-AT-14, INS-AT-15; QUA-C3, QUA-R1, QUA-AT-04; SUS-AT-07; RES-AT-05; Quarantine Vault and Owner Control directions | SR-4 | Revised rule approved in [OD-09](#od-09--protected-evidence). Storage, access enforcement and retention procedures remain open. |
-| F-F | HIGH | Independent enforcement interfaces and failure behavior are undefined. | X-11; SUS-AT-15; RES-AT-12; ACC-AT-12, ACC-AT-18; Owner Control and Governance Assurance directions | SR-7 | **OPEN — OWNER DECISION REQUIRED:** OD-10 |
+| F-F | HIGH | Independent enforcement interfaces and failure behavior are undefined. | X-11; SUS-AT-15; RES-AT-12; ACC-AT-12, ACC-AT-18; Owner Control and Governance Assurance directions | SR-7 | [Failure behavior approved](#od-10--control-verification-and-failure-behavior). Enforcement interfaces and mechanism **OPEN** under OD-10. |
 | F-G | Further | Delegation cannot bypass limits. | D-013; Correction principle (S2); COR-AT-06; SUS-AT-06 | SR-1 | Cross-authority rule approved in [OD-06](#od-06--cross-authority-classification). |
 | F-H | Further | Shared infrastructure cannot silently dissolve project isolation. | D-025; X-9; INS-AT-03; COR-AT-07; QUA-AT-08; RES-AT-10 | — | Principle approved; enforcement mechanism **OPEN** via OD-10; depends on O-004 |
 | F-I | Further | Stale approvals must be revalidated. | INS-AT-12; COR-AT-10; SUS-AT-12; RES-AT-08; ACC-AT-05, ACC-AT-11 | — | **OPEN — OWNER DECISION REQUIRED:** OD-15 |
@@ -43,7 +43,7 @@ These seven rules originated as drafting proposals. Revised SR-1 is approved in 
 | SR-4 | Evidence is independently recoverable and minimally disclosed. | D-021, D-022; INS-R1, INS-AT-14; QUA-C3; SUS-AT-07; RES-AT-05; Owner Control direction (protected evidence retrieval) | Revised wording approved in [OD-09](#od-09--protected-evidence). Evidence under review is recoverable through an Owner-controlled path. |
 | SR-5 | Independent verification must be meaningful. | INS-R2, INS-AT-09; COR-C4; QUA-AT-10; R2; RES-AT-09, RES-AT-14; ACC-C2, ACC-AT-01, ACC-AT-15 | A definition of "meaningful" and who qualifies as independent (OD-05). |
 | SR-6 | Material uncertainty blocks autonomous action, except preapproved temporary containment. | X-2 / COR-C2 (Correction only); D-024; QUA-C1 | Extends a Correction-only rule to every authority; "material" undefined (OD-11); no containment is yet preapproved (OD-07, OD-14). Note QUA-C1: reasonable documented suspicion is sufficient for quarantine — the containment exception must preserve this. |
-| SR-7 | The Owner retains independent stop, recovery and succession. | D-023; X-4, X-5; Owner Control direction; SUS-AT-15; RES-AT-12; ACC-AT-10 | Largely restates approvals; the mechanism and its failure behavior are open (OD-10). |
+| SR-7 | The Owner retains independent stop, recovery and succession. | D-023; X-4, X-5; Owner Control direction; SUS-AT-15; RES-AT-12; ACC-AT-10 | Largely restates approvals; the mechanism remains open under OD-10. The [approved failure behavior](#od-10--control-verification-and-failure-behavior) applies independently of SR-7 adoption. |
 
 ## Owner decisions required
 
@@ -56,7 +56,7 @@ Each item below is **OPEN — OWNER DECISION REQUIRED**. No value, mechanism or 
 | OD-03 | **Emergency notice:** who is notified, how quickly, through which channel, and how notice is authenticated. | F-A, SR-3; QUA-AT-12, SUS-AT-14; ACC-AT-16; OD-18 |
 | OD-04 | **Review deadlines and reviewer:** deadlines for retrospective emergency review, quarantine review (QUA-R1) and suspension review; who reviews; what happens when a deadline passes unreviewed, given that unsafe automatic release/restoration is prohibited (QUA-AT-02, SUS-AT-05). | F-A; OD-05, OD-08 |
 | OD-07 | **Approved procedures:** which procedures and standing boundaries to write and approve for L2, Q2, Q3 emergency, S1, S2, S3 emergency, R1 and R2. None is approved yet. Until one is, each level is limited to the path its source records:<br>• **L2, Q2, S2, R2** each have a separate approval path, as recorded: L2 "only under specifically approved procedure or separate approval" [S2]; Q2 "only under approved procedure or separate Owner approval" [S3]; S2 "under specifically approved procedure or separate Owner approval" [S4]; R2 "under approved procedure or separate Owner authorization" [S5].<br>• **Q3 and S3 emergency exceptions** require an approved procedure: "narrow temporary emergency actions under approved procedure" [S3]; "narrow temporary emergency containment under approved procedures" [S4]. No such procedure is approved, and no alternate path is recorded. The Owner-controlled Q3 path and the Owner-reserved S3 path are distinct from these exceptions.<br>• **S1 and R1** depend on standing prerequisites: S1 "within standing approved boundaries" [S4]; R1 "within standing approved procedures" [S5]. No alternate path is recorded. | All levels; OD-01–OD-04, OD-14 |
-| OD-10 | **Enforcement interfaces and failure behavior:** how independent enforcement connects to each authority and how it behaves when enforcement or the Administrator fails. | F-F, F-H, F-N; SUS-AT-15, RES-AT-12, ACC-AT-12; Owner Control and Governance Assurance directions |
+| OD-10 | **Enforcement interfaces and mechanism:** select how independent enforcement connects to each authority and satisfies the [approved design requirement](#od-10--control-verification-and-failure-behavior). | F-F, F-H, F-N; SUS-AT-15, RES-AT-12, ACC-AT-12; Owner Control and Governance Assurance directions |
 | OD-11 | **Materiality and severity thresholds:** definitions of "serious threat", "credible risk", "material incident" and "material" correction/finding/uncertainty. | SR-6; COR-C4, R2, RES-C3, INS-AT-09, INS-AT-12, INS-AT-13 |
 | OD-12 | **Acceptance test design and pass thresholds** for the 87 scenarios; when tests may be implemented (requires separate authorization). | Charter §10; O-010 |
 | OD-13 | **Resource, retry and loop budgets** for inspections, corrections, suspension and recovery loops. | F-L; INS-AT-07, INS-AT-16, COR-AT-04, SUS-AT-08, RES-AT-06, ACC-AT-13 |
@@ -108,6 +108,16 @@ Give reviewers only the access needed for the case. Keep evidence under review r
 **Design verification:** The tabletop check covered correcting an incident record, review of the Administrator, sharing a scoped lesson across projects, and routine deletion coming due during an open case.
 
 **Open dependencies:** Storage and access enforcement remain open under O-004, O-007 and OD-10. Retention periods and disposal authority require a separately approved procedure.
+
+### OD-10 — Control verification and failure behavior
+
+**Status:** Owner approved this design requirement on 2026-11-23. Selection and implementation of the enforcement mechanism require separate approval.
+
+Material governance actions must use a control the Administrator cannot unilaterally override. Record the authorization, requested action, and observed outcome. Report success only when the resulting state is independently confirmed.
+
+If the control is unavailable or the outcome is uncertain, pause dependent actions and escalate to the Owner through a path that does not require the Administrator’s cooperation. Follow the existing rules for active restrictions. Unaffected work may continue within its existing authority.
+
+**Design verification:** The tabletop check covered a suspension that was acknowledged while access remained active, a partial restoration, and a control failure while the Administrator was unavailable. The mechanism remains open under OD-10. SR-7 remains a proposal under OD-16.
 
 ## Drafting observations
 
