@@ -3,7 +3,7 @@
 **Purpose:** Durable, human-readable continuity record.  
 **Authority:** This file records context and decisions; it does not grant permissions or override statutes.  
 **Repository:** https://github.com/GenX-Shinobi/CHIMERA  
-**Checkpoint:** 2026-11-22 — CH-FOUNDATION-01
+**Checkpoint:** 2026-11-22 — CH-FOUNDATION-01 merged (`main` `7b558f5`); Administrator charter design approved. CH-GOVERNANCE-02 documentation consolidation in draft.
 
 ## Identity and mission
 - Project: **CHIMERA** — **Controlled Hierarchical Intelligence, Modularity, Efficiency, Resilience & Adaptation**. The acronym expansion is formally approved.
@@ -64,7 +64,7 @@ Memory should be portable, human-readable and versioned. Preserve provenance and
 ## Open questions and backlog
 - Exact portable memory schema and enforceable access-control mechanism.
 - Technical implementation of append-only, tamper-evident chronicle and independent recovery.
-- Detailed Administrator inspection, correction, quarantine, suspension and restoration powers. Owner agreed to define this next; exact powers and limits remain open.
+- Administrator charter: powers, limits, safeguards and principles were approved as design on 2026-11-22 and are consolidated in the [Administrator charter](docs/ADMINISTRATOR_CHARTER.md). Operational thresholds, procedures and enforcement mechanisms remain open — see the [consistency register](docs/CONSISTENCY_REGISTER.md).
 - Lesson indexing, retrieval, transfer, retirement and dispute handling.
 - Interactive Workforce Designer (exploratory): guided analysis of goals, workflows, tasks, workload, constraints and automation needs; drafts a justified workforce plan, roles, responsibilities, dependencies, capabilities, permissions and staged implementation. CHIMERA may draft recommendations/configuration but cannot appoint/activate employees or grant permissions without Owner approval.
 

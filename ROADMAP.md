@@ -1,6 +1,6 @@
 # CHIMERA — Roadmap
 
-**Status:** Governance planning; public release prerequisite satisfied on 2026-11-21. CH-FOUNDATION-01 authorizes documentation reconciliation only.  
+**Status:** Governance planning. CH-FOUNDATION-01 merged (PR #1, `main` at `7b558f5`, 2026-11-22). Administrator charter design approved 2026-11-22; CH-GOVERNANCE-02 consolidates it as documentation only.  
 **Repository:** https://github.com/GenX-Shinobi/CHIMERA
 
 ## Mission
@@ -24,7 +24,7 @@ Build a free-to-use, open-source, platform-independent framework for creating, g
 - [x] Approve authority hierarchy and emergency containment boundary.
 - [x] Approve optional-adapter principle and evidence-based recruitment evolution.
 - [x] Approve memory governance, incident response, chronological integrity and institutional learning/project isolation.
-- [ ] Specify detailed Administrator oversight and intervention powers.
+- [ ] Specify detailed Administrator oversight and intervention powers. *Design approved 2026-11-22 (AC-1–AC-7); consolidated in the [Administrator charter](docs/ADMINISTRATOR_CHARTER.md) pending Owner merge; open decisions in the [consistency register](docs/CONSISTENCY_REGISTER.md).*
 - [ ] Define remaining operational conflict, audit and recovery procedures.
 
 ### Phase 1 — MEMORY first
@@ -37,10 +37,10 @@ Build a free-to-use, open-source, platform-independent framework for creating, g
 - [ ] Build a small proof of concept only after the release-first pause is lifted and an Owner-approved milestone is set.
 
 ### Phase 2 — CHIMERA Administrator
-- [ ] Finalize Administrator charter, inspection, correction, quarantine, suspension, restoration and escalation boundaries.
+- [ ] Finalize Administrator charter, inspection, correction, quarantine, suspension, restoration and escalation boundaries. *Charter design consolidated; operational thresholds, procedures and enforcement mechanisms remain open (OD-01–OD-18).*
 - [ ] Begin with ChatGPT as initial Administrator while keeping the role replaceable.
 - [ ] Validate oversight without self-authorizing changes or granting permissions.
-- [ ] Test temporary containment and evidence-preserving rollback.
+- [ ] Test temporary containment and evidence-preserving rollback. *The charter's 87 adversarial scenarios are future acceptance criteria; none implemented or executed.*
 
 ### Phase 3 — Reusable employee framework
 - [ ] Define employee identity, charter, scope, capabilities, permissions and memory boundaries.
@@ -77,4 +77,4 @@ Build a free-to-use, open-source, platform-independent framework for creating, g
 This roadmap is a planning document, not permission to implement every phase. The Owner authorizes milestones and material changes. Within an approved milestone, routine work may proceed under bounded autonomy. Statute changes, authority changes, permanent appointments, major architecture/dependency changes, scope changes and publication/release actions require explicit Owner approval.
 
 ## Current next step
-Complete CH-FOUNDATION-01 review and obtain separate Owner approval to merge PR #1. Next proposed governance task: detailed Administrator oversight charter. Runtime implementation and pilot remain unauthorized.
+Independent review of the CH-GOVERNANCE-02 draft PR, then a separate Owner merge decision. After that, the Owner decisions in the [consistency register](docs/CONSISTENCY_REGISTER.md#owner-decisions-required). Runtime implementation, enforcement, tests and pilot remain unauthorized.

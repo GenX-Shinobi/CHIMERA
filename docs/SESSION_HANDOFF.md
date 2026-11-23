@@ -1,9 +1,9 @@
 # CHIMERA — Session Handoff
 
-**Checkpoint:** 2026-11-22 — CH-FOUNDATION-01  
+**Checkpoint:** 2026-11-23 — CH-GOVERNANCE-02 (documentation only)  
 **Repository:** https://github.com/GenX-Shinobi/CHIMERA  
-**Current state:** public release prerequisite verified; Owner authorized CH-FOUNDATION-01 documentation reconciliation only. Implementation and testing remain unauthorized.  
-**GitHub:** documentation PR #1 remains open and unmerged: https://github.com/GenX-Shinobi/CHIMERA/pull/1. Preflight branch `docs/foundation-roadmap-memory` at `b1a0ae8681c58b9f657ca44c16700b347a1aad90`; main at `40c32cd9a63ee49ee20ef545476e550648f713ce`. Verify live heads before acting.
+**Current state:** CH-FOUNDATION-01 merged. Administrator charter design (six subjects, 87 adversarial scenarios) Owner-approved on 2026-11-22. CH-GOVERNANCE-02 consolidates it into the [Administrator charter](ADMINISTRATOR_CHARTER.md) and [consistency register](CONSISTENCY_REGISTER.md) on a draft PR. Implementation, enforcement, testing and pilot remain unauthorized.  
+**GitHub (verified 2026-11-23):** PR #1 merged 2026-11-22; `main` at `7b558f5563e06df601fdce5a911560cc94c72aec` ([verified checkpoint](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7075994240)). CH-GOVERNANCE-02 branch `docs/ch-governance-02-charter` created from that commit; draft PR awaiting independent review and Owner merge decision. Verify live heads before acting.
 
 ## Owner-approved priority order
 1. Complete documentation maintenance and session handoffs for both repositories.
@@ -25,14 +25,14 @@
 - Chronological Integrity Principle: continuous, tamper-evident, append-only history. Corrections are new entries, never silent rewrites.
 - Authority hierarchy and amendment process are recorded in [DECISIONS.md](DECISIONS.md).
 - Organizational and project chronicles remain separate; verified and appropriately scoped lessons may transfer with provenance, evidence, applicability, verification status, history and usage. Retiring a lesson does not delete historical evidence.
-- The Owner has approved proceeding with the definition/documentation of Administrator oversight and intervention authority. **The exact operational powers and limits are not yet approved**; define them as the next CHIMERA governance task after the v5.4.0 release-first pause is lifted. Preserve the already-approved temporary containment authority for serious threats; do not infer broader powers.
+- Administrator oversight and intervention authority: the Owner approved the powers, limits, safeguards, universal tests and governing principles of Inspection, Correction, Quarantine, Suspension, Restoration and Accountability as **charter design** on 2026-11-22 (AC-1–AC-7 in [DECISIONS.md](DECISIONS.md)). **Operational thresholds, approved procedures and enforcement mechanisms are not approved** — see OD-01–OD-18 in the [consistency register](CONSISTENCY_REGISTER.md#owner-decisions-required). Preserve the temporary containment authority in D-024; do not infer broader powers, and do not treat the audit's seven shared rules as policy.
 
 ## Exploratory backlog — not active implementation
 - Interactive Workforce Designer: guided workforce/workflow analysis and proposed staffing/role/task plan. CHIMERA may draft recommendations and configuration but cannot appoint/activate employees or grant permissions without Owner approval.
 - Future Prompt Builder roadmap items may be used as CHIMERA test material only after v5.4.0 is publicly released and a bounded test plan is approved.
 
 ## Session startup
-1. Read README.md, MEMORY.md, ROADMAP.md, docs/DECISIONS.md, docs/MEMORY_ARCHITECTURE.md and this handoff.
+1. Read README.md, MEMORY.md, ROADMAP.md, docs/DECISIONS.md, docs/ADMINISTRATOR_CHARTER.md, docs/CONSISTENCY_REGISTER.md, docs/MEMORY_ARCHITECTURE.md and this handoff.
 2. Verify live GitHub branches, PRs, commit heads and the actual Claude workspace before acting.
 3. Compare repository records with this handoff and correct stale facts.
 4. Keep each project, its authority, memory, branches and release process separate.
@@ -40,4 +40,4 @@
 6. Do not claim background work or local workspace state unless actually checked.
 
 ## Single next action
-Review CH-FOUNDATION-01 and obtain explicit Owner merge approval for PR #1. Next proposed governance task: define the Administrator oversight and intervention charter. Do not merge or begin implementation without the required approval.
+Independent review of the CH-GOVERNANCE-02 draft PR, then an explicit Owner merge decision. Do not merge, release, begin implementation or activate a pilot without separate approval.

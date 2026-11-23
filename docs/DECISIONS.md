@@ -1,6 +1,6 @@
 # CHIMERA — Decision Register
 
-This register separates owner-approved decisions from unresolved questions. See [MEMORY.md](../MEMORY.md) for context. Decisions below reflect the owner-approved session outcomes through 2026-11-21.
+This register separates owner-approved decisions from unresolved questions. See [MEMORY.md](../MEMORY.md) for context. Foundational decisions D-001–D-026 reflect the owner-approved session outcomes through 2026-11-21 and were verified intact on `main` at `7b558f5` after PR #1 merged (2026-11-22). Administrator charter design approvals of 2026-11-22 are listed separately below and consolidated in the [Administrator charter](ADMINISTRATOR_CHARTER.md).
 
 ## Approved
 
@@ -39,9 +39,25 @@ This register separates owner-approved decisions from unresolved questions. See 
 |---|---|---|
 | O-004 | Final portable memory schema and access-control enforcement mechanism. | Needed for reliable cross-platform memory. |
 | O-007 | Exact implementation mechanics for the append-only, tamper-evident chronicle. | Must be independently verifiable and recoverable. |
-| O-008 | Detailed Administrator inspection, correction, quarantine, suspension and restoration powers. | Define precise operational boundaries, approval thresholds, review and appeal/escalation. |
+| O-008 | Detailed Administrator inspection, correction, quarantine, suspension and restoration powers. | Define precise operational boundaries, approval thresholds, review and appeal/escalation. **Status (2026-11-22):** powers, limits, safeguards and principles approved as charter design (AC-1–AC-7 below); operational thresholds, procedures and mechanisms remain open as OD-01–OD-18 in the [consistency register](CONSISTENCY_REGISTER.md#owner-decisions-required). |
 | O-009 | Detailed lesson indexing, retrieval, transfer and retirement mechanics. | Preserve institutional learning while controlling project isolation and overhead. |
 | O-010 | Future milestones and acceptance criteria after the current pause. | Public release verified 2026-11-22; future milestones still require separate Owner authorization. |
+
+## Administrator charter design approvals (2026-11-22)
+
+Owner-approved charter **design** decisions recorded in the PR #1 thread. They specify the authority contemplated by D-026 and do not alter D-001–D-026. Implementation, enforcement and tests are not authorized. Full text: [Administrator charter](ADMINISTRATOR_CHARTER.md).
+
+| ID | Decision | Record | Charter |
+|---|---|---|---|
+| AC-1 | Inspection: Option B, bounded read-only inspection authority. | [S1](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7076060217) | [§4](ADMINISTRATOR_CHARTER.md#4-inspection-authority) |
+| AC-2 | Correction: strengthened Three-Level Bounded Correction Authority; 10 safeguards. | [S2](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7076171915) | [§5](ADMINISTRATOR_CHARTER.md#5-correction-authority) |
+| AC-3 | Quarantine: Three-Level Bounded Quarantine Authority; 12 safeguards; Quarantine Vault direction. | [S3](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7076271162) | [§6](ADMINISTRATOR_CHARTER.md#6-quarantine-authority) |
+| AC-4 | Suspension: Three-Level Bounded Suspension Authority; 15 safeguards; Independent Owner Control Mechanism direction. | [S4](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7076384538) | [§7](ADMINISTRATOR_CHARTER.md#7-suspension-authority) |
+| AC-5 | Restoration: Three-Level Bounded Restoration Authority; 16 safeguards; Verified Recovery Framework direction. | [S5](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7076469959) | [§8](ADMINISTRATOR_CHARTER.md#8-restoration-authority) |
+| AC-6 | Accountability: Three-Level Accountability; 18 safeguards; Independent Governance Assurance Framework direction. | [S6](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7076832115) | [§9](ADMINISTRATOR_CHARTER.md#9-accountability) |
+| AC-7 | Inspection retrospective: 16 safeguards, universal test and strengthened principle; original powers unchanged; 87 scenarios total. | [S1R](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7076915462) | [§4](ADMINISTRATOR_CHARTER.md#4-inspection-authority), [§10](ADMINISTRATOR_CHARTER.md#10-scenario-inventory) |
+
+The [cross-subject audit](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7077003997) findings and its seven shared rules are **not** approved decisions; they are tracked in the [consistency register](CONSISTENCY_REGISTER.md).
 
 ## Exploratory backlog — not approved requirements
 

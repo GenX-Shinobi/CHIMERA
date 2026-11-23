@@ -1,6 +1,6 @@
 # CHIMERA MEMORY — Architecture Notes
 
-**Status:** Approved design direction; detailed schema and implementation remain open. CH-FOUNDATION-01 (2026-11-22) reconciles documentation only; no memory implementation or access-control mechanism is authorized.  
+**Status:** Approved design direction; detailed schema and implementation remain open. CH-FOUNDATION-01 (2026-11-22) reconciles documentation only; no memory implementation or access-control mechanism is authorized. Administrator inspection of memory is specified in the [Administrator charter](ADMINISTRATOR_CHARTER.md) (CH-GOVERNANCE-02, documentation only).  
 **Parent record:** [MEMORY.md](../MEMORY.md)
 
 ## Design goal
@@ -24,6 +24,7 @@ The **Chronological Integrity Principle** is not a fifth memory level. It is a s
 - Corrections, clarifications and reversals are new linked entries. Never silently rewrite or destroy historical evidence.
 - Each consequential entry should identify source, author/role, timestamp, scope, evidence, verification state and related authorization.
 - A log entry is evidence of a recorded event, not proof that the event description is true. Record what was reported versus independently verified.
+- The approved Quarantine Vault direction links to this layer and is likewise not a fifth memory level ([charter §6.6](ADMINISTRATOR_CHARTER.md#66-architectural-direction--quarantine-vault-s3)).
 
 ## Memory ownership and separation
 - **CHIMERA-wide memory:** universal statutes, approved governance, shared standards and reusable lessons.
@@ -37,7 +38,7 @@ The **Chronological Integrity Principle** is not a fifth memory level. It is a s
 Project-specific information must not leak into another project because the same employee is reused. Employees carry reusable role identity and approved reusable knowledge, not automatic access to prior project memory.
 
 ## Persistent memory governance
-All persistent employee memory must be registered, governed, traceable and subject to Administrator oversight. Metadata should identify author, date/time, source, purpose, scope, memory level, status, version/history and access classification. Administrator oversight includes the ability to inspect and audit organizationally managed persistent memory within its authorized scope.
+All persistent employee memory must be registered, governed, traceable and subject to Administrator oversight. Metadata should identify author, date/time, source, purpose, scope, memory level, status, version/history and access classification. Administrator oversight includes the ability to inspect and audit organizationally managed persistent memory within its authorized scope. The bounds on that inspection, and on correcting, quarantining and restoring memory, are in the [Administrator charter](ADMINISTRATOR_CHARTER.md) §§4–6 and §8.
 
 Employees may keep task-appropriate working notes, but may not maintain hidden persistent memory as an alternative source of authority or use it to bypass statutes, access controls or authorization. Temporary working notes must not silently become permanent organizational knowledge.
 
@@ -74,7 +75,7 @@ Every handoff must name:
 ## Continuity and recovery
 A replacement employee or different AI platform should eventually be able to locate authoritative instructions, retrieve only authorized memory, resume from a current Working record, verify provenance/status, record new events without rewriting history, and hand off work with explicit responsibility and completion criteria.
 
-Incident response must preserve chronology: detect and flag, contain, preserve evidence, investigate, correct/recover when justified, and learn/prevent recurrence. Rollback may restore prior memory, permissions, configuration or project state where justified, but must not erase the incident record or evidence.
+Incident response must preserve chronology: detect and flag, contain, preserve evidence, investigate, correct/recover when justified, and learn/prevent recurrence. Rollback may restore prior memory, permissions, configuration or project state where justified, but must not erase the incident record or evidence. Restoration bounds, including that restored snapshots cannot supersede current authorization, are in [charter §8](ADMINISTRATOR_CHARTER.md#8-restoration-authority).
 
 ## First proof of concept
 1. A role reads its approved charter and assignment.
