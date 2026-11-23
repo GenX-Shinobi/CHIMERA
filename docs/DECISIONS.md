@@ -57,7 +57,7 @@ Owner-approved charter **design** decisions recorded in the PR #1 thread. They s
 | AC-6 | Accountability: Three-Level Accountability; 18 safeguards; Independent Governance Assurance Framework direction. | [S6](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7076832115) | [§9](ADMINISTRATOR_CHARTER.md#9-accountability) |
 | AC-7 | Inspection retrospective: 16 safeguards, universal test and strengthened principle; original powers unchanged; 87 scenarios total. | [S1R](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7076915462) | [§4](ADMINISTRATOR_CHARTER.md#4-inspection-authority), [§10](ADMINISTRATOR_CHARTER.md#10-scenario-inventory) |
 
-The [cross-subject audit](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7077003997) findings and the disposition of each shared rule are tracked in the [consistency register](CONSISTENCY_REGISTER.md). The Owner approved [revised SR-3](CONSISTENCY_REGISTER.md#od-16--adoption-of-sr-3) on 2026-11-23. OD-16 remains open for SR-5 through SR-7.
+The [cross-subject audit](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7077003997) findings and the disposition of each shared rule are tracked in the [consistency register](CONSISTENCY_REGISTER.md). The Owner approved [revised SR-3](CONSISTENCY_REGISTER.md#od-16--adoption-of-sr-3) on 2026-11-23. The Owner approved [revised SR-5](CONSISTENCY_REGISTER.md#od-16--adoption-of-sr-5) on 2026-11-23. OD-16 remains open for SR-6 and SR-7.
 
 ## Exploratory backlog — not approved requirements
 
