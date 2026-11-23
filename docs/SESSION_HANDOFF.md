@@ -2,8 +2,8 @@
 
 **Checkpoint:** 2026-11-23 — CH-GOVERNANCE-02 (documentation only)  
 **Repository:** https://github.com/GenX-Shinobi/CHIMERA  
-**Current state:** CH-FOUNDATION-01 merged. Administrator charter design (six subjects, 87 adversarial scenarios) Owner-approved on 2026-11-22. CH-GOVERNANCE-02 consolidates it into the [Administrator charter](ADMINISTRATOR_CHARTER.md) and [consistency register](CONSISTENCY_REGISTER.md) on a draft PR. Implementation, enforcement, testing and pilot remain unauthorized.  
-**GitHub (verified 2026-11-23):** PR #1 merged 2026-11-22; `main` at `7b558f5563e06df601fdce5a911560cc94c72aec` ([verified checkpoint](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7075994240)). CH-GOVERNANCE-02 branch `docs/ch-governance-02-charter` created from that commit; draft PR awaiting independent review and Owner merge decision. Verify live heads before acting.
+**Current state:** CH-FOUNDATION-01 merged. Administrator charter design (six subjects, 87 adversarial scenarios) Owner-approved on 2026-11-22. CH-GOVERNANCE-02 consolidates it into the [Administrator charter](ADMINISTRATOR_CHARTER.md) and [consistency register](CONSISTENCY_REGISTER.md) in [CHIMERA PR #2](https://github.com/GenX-Shinobi/CHIMERA/pull/2), merged at `8279b92`. Implementation, enforcement, testing and pilot remain unauthorized.  
+**GitHub (verified 2026-11-23):** [CHIMERA PR #2](https://github.com/GenX-Shinobi/CHIMERA/pull/2) merged at `8279b92`. A post-merge documentation review checked all six authorities against the recorded Owner approvals and identified two clarifications: X-1 needed to reflect the S1 and R1 prerequisites, and this checkpoint needed to reflect the merge. Verify live heads before acting.
 
 ## Owner-approved priority order
 1. Complete documentation maintenance and session handoffs for both repositories.
@@ -40,4 +40,4 @@
 6. Do not claim background work or local workspace state unless actually checked.
 
 ## Single next action
-Independent review of the CH-GOVERNANCE-02 draft PR, then an explicit Owner merge decision. Do not merge, release, begin implementation or activate a pilot without separate approval.
+The Owner may take up the open decisions in the [consistency register](CONSISTENCY_REGISTER.md#owner-decisions-required). Release, implementation and pilot activation require separate Owner approval.
