@@ -63,7 +63,7 @@ Each item below is **OPEN — OWNER DECISION REQUIRED**. No value, mechanism or 
 | OD-14 | **Owner unavailability:** which temporary protective containment, if any, is preapproved for when the Owner cannot be reached (adopt, modify or reject SR-6's exception). | F-M; D-024; OD-01, OD-07 |
 | OD-16 | **Adoption of SR-3 and SR-5–SR-7:** adopt, modify or reject each remaining proposed shared rule. | All findings |
 | OD-17 | **Charter classification:** whether this charter is a Foundational or Controlled commitment, which determines its amendment track under D-024. | D-016, D-024; Charter §12 |
-| OD-18 | **Owner communication authentication mechanism:** select the approval and recovery channels and the mechanism that satisfies the [approved design requirement](#od-18--owner-approval-authentication). | ACC-AT-04, ACC-AT-16; OD-03, OD-10, OD-15 |
+| OD-18 | **Owner communication authentication mechanism:** select the broader Owner communication channels and implement the mechanism that satisfies the [approved design requirement and Founder credential model](#od-18--owner-approval-authentication). | ACC-AT-04, ACC-AT-16; OD-03, OD-10, OD-15 |
 
 ## Approved Owner decisions
 
@@ -132,7 +132,11 @@ If the approval was revoked, expired, already used for a completed one-time acti
 
 ### OD-18 — Owner approval authentication
 
-**Status:** Owner approved this design requirement on 2026-11-23. Channel selection and implementation require separate approval.
+**Status:** Owner approved this design requirement on 2026-11-23. The Founder credential model was already approved.
+
+**Approved Founder credential model:** Enroll one primary key and one recovery key, with an offline single-use recovery code. The primary key authorizes routine Founder actions bound to the specific action and project. Either enrolled key can freeze Founder actions. Replacing either key requires the surviving key, the current recovery code, and proof of possession of the exact replacement key. Replacement leaves an active freeze in effect. Unfreeze requires both current keys after the current recovery code has been acknowledged. Android and desktop have equal standing under these rules.
+
+**Open scope:** Broader Owner approval and recovery communication channel selection, production implementation, and total-loss handling still require separate decisions. H0 physical-key validation remains paused.
 
 Before acting on an Owner approval, verify the original decision through an Owner-designated channel and link the record to the action it authorizes. If the record is unavailable, the sender’s authority is uncertain, or the channel may be compromised, pause the affected action and seek confirmation through a separately designated Owner-controlled path.
 
