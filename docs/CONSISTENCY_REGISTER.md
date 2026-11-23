@@ -1,0 +1,76 @@
+# CHIMERA — Administrator Charter Consistency Register
+
+**Status:** Tracking register created under CH-GOVERNANCE-02 (documentation only). It records the 14 findings and 7 proposed shared rules from the [cross-subject consistency audit](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7077003997) (2026-11-22) and the Owner decisions they require.
+**Nature of entries:** Findings are **design findings, not observed incidents**. Shared rules are **proposals, not approved policy**. Nothing in this register grants authority, changes an approved decision or resolves an open matter.
+**Related:** [Administrator charter](ADMINISTRATOR_CHARTER.md) (clause IDs such as `QUA-AT-12` refer to it) · [Decision register](DECISIONS.md)
+
+Status vocabulary:
+- **APPROVED (design)** — recorded Owner approval exists; implementation not authorized.
+- **PROPOSED — NOT APPROVED** — drafting recommendation from the audit.
+- **OPEN — OWNER DECISION REQUIRED** — no recorded Owner decision; must not be filled in by drafting.
+
+## Findings
+
+Severity is as recorded in the audit. "Supporting approvals" are existing approved clauses that partly address the finding; they do not close it.
+
+| ID | Severity | Finding (as recorded) | Supporting approvals | Proposed rule | Status / open decisions |
+|---|---|---|---|---|---|
+| F-A | CRITICAL | Emergency authority lacks unified duration, renewal, notification, escalation and review deadlines. | D-024; QUA-AT-02, QUA-AT-12; SUS-AT-05, SUS-AT-14; RES-AT-15; Q3, S3 emergency exceptions | SR-3 | **OPEN — OWNER DECISION REQUIRED:** OD-01, OD-02, OD-03, OD-04 |
+| F-B | CRITICAL | Cross-authority action classification/decomposition can launder unauthorized changes. | COR-C1, COR-AT-01, COR-AT-02; Correction principle (S2); ACC-AT-17 | SR-1 | **OPEN — OWNER DECISION REQUIRED:** OD-06 |
+| F-C | CRITICAL | Administrator conflicts of interest need an independently controlled reviewer/evidence and Owner fallback. | X-4, X-5, X-6; INS-R2, INS-AT-09; COR-C4; QUA-AT-07; SUS-AT-01; RES-AT-04, RES-AT-14; A2; ACC-AT-15 | SR-5, SR-7 | **OPEN — OWNER DECISION REQUIRED:** OD-05 |
+| F-D | HIGH | Containment and restoration require authoritative shared state and restriction precedence. | X-3 / RES-C1; QUA-AT-02; SUS-AT-05; RES-AT-01 | SR-2 | **OPEN — OWNER DECISION REQUIRED:** OD-08 |
+| F-E | HIGH | Protected evidence handling needs a common provenance, access, retention and review specification. | D-021, D-022; X-10; INS-R1, INS-AT-14, INS-AT-15; QUA-C3, QUA-R1, QUA-AT-04; SUS-AT-07; RES-AT-05; Quarantine Vault and Owner Control directions | SR-4 | **OPEN — OWNER DECISION REQUIRED:** OD-09; depends on O-004, O-007 |
+| F-F | HIGH | Independent enforcement interfaces and failure behavior are undefined. | X-11; SUS-AT-15; RES-AT-12; ACC-AT-12, ACC-AT-18; Owner Control and Governance Assurance directions | SR-7 | **OPEN — OWNER DECISION REQUIRED:** OD-10 |
+| F-G | Further | Delegation cannot bypass limits. | D-013; Correction principle (S2); COR-AT-06; SUS-AT-06 | SR-1 | Partly addressed by approvals; cross-authority rule **OPEN** via OD-06 / OD-16 |
+| F-H | Further | Shared infrastructure cannot silently dissolve project isolation. | D-025; X-9; INS-AT-03; COR-AT-07; QUA-AT-08; RES-AT-10 | — | Principle approved; enforcement mechanism **OPEN** via OD-10; depends on O-004 |
+| F-I | Further | Stale approvals must be revalidated. | INS-AT-12; COR-AT-10; SUS-AT-12; RES-AT-08; ACC-AT-05, ACC-AT-11 | — | **OPEN — OWNER DECISION REQUIRED:** OD-15 |
+| F-J | Further | Restored historical snapshots cannot revive revoked permissions. | RES-C2; RES-AT-03, RES-AT-08; Restoration principle (S5) | SR-2 | Addressed in approved design; mechanism **OPEN** via OD-08, OD-10 |
+| F-K | Further | Logged claims are not automatically verified facts. | INS-L2; INS-AT-10; QUA-AT-11; ACC-AT-03; [Memory architecture](MEMORY_ARCHITECTURE.md#separate-chronological-integrity-layer) | — | Addressed in approved design; mechanism **OPEN** via O-007 |
+| F-L | Further | Governance loops need resource/retry budgets. | INS-AT-07, INS-AT-16; COR-AT-04; SUS-AT-08; RES-AT-06; ACC-AT-13 | — | **OPEN — OWNER DECISION REQUIRED:** OD-13 |
+| F-M | Further | Owner unavailability allows only preapproved temporary protective containment. | D-024; Q3, S3 emergency exceptions | SR-6 | **OPEN — OWNER DECISION REQUIRED:** OD-14, OD-07 |
+| F-N | Further | Claimed suspension must be grounded in actual enforcement. | SUS-C6; SUS-AT-15; ACC-AT-12; X-11 | — | Addressed in approved design; mechanism **OPEN** via OD-10 |
+
+## Proposed shared consolidation rules
+
+All seven are **PROPOSED — NOT APPROVED**. They are drafting recommendations derived from approved safeguards. The "Novel element" column flags where a rule goes beyond what any approval records; those parts need an Owner decision (OD-16) before they can enter the charter.
+
+| ID | Proposed rule (as recorded) | Supporting approvals | Novel element requiring Owner decision |
+|---|---|---|---|
+| SR-1 | The highest applicable authority prevails across direct, cumulative and delegated actions. | D-023; Correction principle (S2); COR-C1, COR-AT-02, COR-AT-06 | Extends a Correction-only rule to every authority and to mixed-authority actions. |
+| SR-2 | Restrictions remain active until properly cleared. | X-3 / RES-C1; QUA-AT-02; SUS-AT-05; RES-AT-01 | What "properly cleared" means, who may clear, and precedence between quarantine and suspension restrictions. |
+| SR-3 | Emergency scope, duration, notification, review and renewal are bounded. | D-024; QUA-AT-12; SUS-AT-14; RES-AT-15 | A single emergency regime across authorities; every bound value (OD-01–OD-04). |
+| SR-4 | Evidence is independently recoverable and minimally disclosed. | D-021, D-022; INS-R1, INS-AT-14; QUA-C3; SUS-AT-07; RES-AT-05; Owner Control direction (protected evidence retrieval) | "Independently recoverable" as a universal requirement; the evidence specification (OD-09). |
+| SR-5 | Independent verification must be meaningful. | INS-R2, INS-AT-09; COR-C4; QUA-AT-10; R2; RES-AT-09, RES-AT-14; ACC-C2, ACC-AT-01, ACC-AT-15 | A definition of "meaningful" and who qualifies as independent (OD-05). |
+| SR-6 | Material uncertainty blocks autonomous action, except preapproved temporary containment. | X-2 / COR-C2 (Correction only); D-024; QUA-C1 | Extends a Correction-only rule to every authority; "material" undefined (OD-11); no containment is yet preapproved (OD-07, OD-14). Note QUA-C1: reasonable documented suspicion is sufficient for quarantine — the containment exception must preserve this. |
+| SR-7 | The Owner retains independent stop, recovery and succession. | D-023; X-4, X-5; Owner Control direction; SUS-AT-15; RES-AT-12; ACC-AT-10 | Largely restates approvals; the mechanism and its failure behavior are open (OD-10). |
+
+## Owner decisions required
+
+Each item below is **OPEN — OWNER DECISION REQUIRED**. No value, mechanism or choice has been assumed.
+
+| ID | Decision | Depends on / affects |
+|---|---|---|
+| OD-01 | **Emergency duration:** maximum duration of emergency containment under Q3 and S3 exceptions and D-024 temporary restriction. | F-A, SR-3; QUA-AT-12, SUS-AT-14, RES-AT-15; OD-07 |
+| OD-02 | **Emergency renewal:** who may renew, how many times, on what evidence, and what triggers repeated-emergency investigation. | F-A, SR-3; QUA-AT-12, SUS-AT-05, SUS-AT-14; OD-01, OD-05 |
+| OD-03 | **Emergency notice:** who is notified, how quickly, through which channel, and how notice is authenticated. | F-A, SR-3; QUA-AT-12, SUS-AT-14; ACC-AT-16; OD-18 |
+| OD-04 | **Review deadlines and reviewer:** deadlines for retrospective emergency review, quarantine review (QUA-R1) and suspension review; who reviews; what happens when a deadline passes unreviewed, given that unsafe automatic release/restoration is prohibited (QUA-AT-02, SUS-AT-05). | F-A; OD-05, OD-08 |
+| OD-05 | **Independent review when the Administrator has a conflict:** who reviews, how evidence is kept outside the Administrator's control, and the Owner fallback. | F-C, SR-5, SR-7; INS-AT-09, COR-C4, RES-AT-04, RES-AT-14, A2; OD-10 |
+| OD-06 | **Cross-authority classification:** how an action spanning several authorities, or split into smaller steps, is classified (adopt, modify or reject SR-1). | F-B, F-G; COR-C1, COR-AT-02 |
+| OD-07 | **Approved procedures:** which procedures to write and approve for L2, Q2, Q3 emergency, S1 standing boundaries, S2, S3 emergency, R1 and R2. None exist; until approved, these levels need separate approval. | All levels; OD-01–OD-04, OD-14 |
+| OD-08 | **Authoritative restriction state and precedence:** where active restrictions are recorded and which prevails when quarantine, suspension and restoration overlap (adopt, modify or reject SR-2). | F-D, F-J; RES-C1; depends on O-004, O-007 |
+| OD-09 | **Protected evidence specification:** provenance, access, retention, review and minimal disclosure (adopt, modify or reject SR-4). | F-E; Quarantine Vault; depends on O-004, O-007 |
+| OD-10 | **Enforcement interfaces and failure behavior:** how independent enforcement connects to each authority and how it behaves when enforcement or the Administrator fails. | F-F, F-H, F-N; SUS-AT-15, RES-AT-12, ACC-AT-12; Owner Control and Governance Assurance directions |
+| OD-11 | **Materiality and severity thresholds:** definitions of "serious threat", "credible risk", "material incident" and "material" correction/finding/uncertainty. | SR-6; COR-C4, R2, RES-C3, INS-AT-09, INS-AT-12, INS-AT-13 |
+| OD-12 | **Acceptance test design and pass thresholds** for the 87 scenarios; when tests may be implemented (requires separate authorization). | Charter §10; O-010 |
+| OD-13 | **Resource, retry and loop budgets** for inspections, corrections, suspension and recovery loops. | F-L; INS-AT-07, INS-AT-16, COR-AT-04, SUS-AT-08, RES-AT-06, ACC-AT-13 |
+| OD-14 | **Owner unavailability:** which temporary protective containment, if any, is preapproved for when the Owner cannot be reached (adopt, modify or reject SR-6's exception). | F-M; D-024; OD-01, OD-07 |
+| OD-15 | **Approval validity:** how approvals are bound to scope/state and when they must be revalidated. | F-I; ACC-AT-05, COR-AT-10, SUS-AT-12 |
+| OD-16 | **Adoption of SR-1–SR-7:** adopt, modify or reject each proposed shared rule. | All findings |
+| OD-17 | **Charter classification:** whether this charter is a Foundational or Controlled commitment, which determines its amendment track under D-024. | D-016, D-024; Charter §12 |
+| OD-18 | **Owner communication authentication** mechanism. | ACC-AT-04, ACC-AT-16; OD-03, OD-10 |
+
+## Drafting observations
+
+- The CH-FOUNDATION-02 checkpoint listed "escalation and independent review" as later subjects. The six approved subjects cover them inside Accountability (A2, ACC-AT-08) and in the per-subject escalation safeguards. No separate escalation subject was approved. [[checkpoint](https://github.com/GenX-Shinobi/CHIMERA/pull/1#issuecomment-7075994240); S6]
+- Inspection has two recorded principles. The strengthened principle [S1R] is treated as current and the original [S1] is retained as superseded, consistent with D-022.
+- Correction L2 cites "separate approval"; Q2, S2 and R2 cite "separate Owner approval/authorization". The difference is preserved as recorded; whether it was intended can be confirmed under OD-07.
