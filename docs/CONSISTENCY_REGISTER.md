@@ -20,7 +20,7 @@ Severity is as recorded in the audit. "Supporting approvals" are existing approv
 | F-B | CRITICAL | Cross-authority action classification/decomposition can launder unauthorized changes. | COR-C1, COR-AT-01, COR-AT-02; Correction principle (S2); ACC-AT-17 | SR-1 | Revised rule approved in [OD-06](#od-06--cross-authority-classification). |
 | F-C | CRITICAL | Administrator conflicts of interest need an independently controlled reviewer/evidence and Owner fallback. | X-4, X-5, X-6; INS-R2, INS-AT-09; COR-C4; QUA-AT-07; SUS-AT-01; RES-AT-04, RES-AT-14; A2; ACC-AT-15 | SR-5, SR-7 | [OD-05 approved](#od-05--independent-review-of-administrator-conflicts). Enforcement remains open under OD-10. |
 | F-D | HIGH | Containment and restoration require authoritative shared state and restriction precedence. | X-3 / RES-C1; QUA-AT-02; SUS-AT-05; RES-AT-01 | SR-2 | Revised rule approved in [OD-08](#od-08--overlapping-restrictions). Storage and enforcement remain open. |
-| F-E | HIGH | Protected evidence handling needs a common provenance, access, retention and review specification. | D-021, D-022; X-10; INS-R1, INS-AT-14, INS-AT-15; QUA-C3, QUA-R1, QUA-AT-04; SUS-AT-07; RES-AT-05; Quarantine Vault and Owner Control directions | SR-4 | **OPEN — OWNER DECISION REQUIRED:** OD-09; depends on O-004, O-007 |
+| F-E | HIGH | Protected evidence handling needs a common provenance, access, retention and review specification. | D-021, D-022; X-10; INS-R1, INS-AT-14, INS-AT-15; QUA-C3, QUA-R1, QUA-AT-04; SUS-AT-07; RES-AT-05; Quarantine Vault and Owner Control directions | SR-4 | Revised rule approved in [OD-09](#od-09--protected-evidence). Storage, access enforcement and retention procedures remain open. |
 | F-F | HIGH | Independent enforcement interfaces and failure behavior are undefined. | X-11; SUS-AT-15; RES-AT-12; ACC-AT-12, ACC-AT-18; Owner Control and Governance Assurance directions | SR-7 | **OPEN — OWNER DECISION REQUIRED:** OD-10 |
 | F-G | Further | Delegation cannot bypass limits. | D-013; Correction principle (S2); COR-AT-06; SUS-AT-06 | SR-1 | Cross-authority rule approved in [OD-06](#od-06--cross-authority-classification). |
 | F-H | Further | Shared infrastructure cannot silently dissolve project isolation. | D-025; X-9; INS-AT-03; COR-AT-07; QUA-AT-08; RES-AT-10 | — | Principle approved; enforcement mechanism **OPEN** via OD-10; depends on O-004 |
@@ -33,14 +33,14 @@ Severity is as recorded in the audit. "Supporting approvals" are existing approv
 
 ## Proposed shared consolidation rules
 
-These seven rules originated as drafting proposals. Revised SR-1 is approved in [OD-06](#od-06--cross-authority-classification). Revised SR-2 is approved in [OD-08](#od-08--overlapping-restrictions). SR-3–SR-7 remain **PROPOSED — NOT APPROVED** and await Owner decisions under OD-16.
+These seven rules originated as drafting proposals. Revised SR-1 is approved in [OD-06](#od-06--cross-authority-classification). Revised SR-2 is approved in [OD-08](#od-08--overlapping-restrictions). Revised SR-4 is approved in [OD-09](#od-09--protected-evidence). SR-3 and SR-5–SR-7 remain **PROPOSED — NOT APPROVED** and await Owner decisions under OD-16.
 
 | ID | Proposed rule (as recorded) | Supporting approvals | Novel element requiring Owner decision |
 |---|---|---|---|
 | SR-1 | The highest applicable authority prevails across direct, cumulative and delegated actions. | D-023; Correction principle (S2); COR-C1, COR-AT-02, COR-AT-06 | Revised wording approved in [OD-06](#od-06--cross-authority-classification) and governs direct, cumulative and delegated actions. |
 | SR-2 | Restrictions remain active until properly cleared. | X-3 / RES-C1; QUA-AT-02; SUS-AT-05; RES-AT-01 | Revised wording approved in [OD-08](#od-08--overlapping-restrictions). Each restriction retains its own clearance requirements. |
 | SR-3 | Emergency scope, duration, notification, review and renewal are bounded. | D-024; QUA-AT-12; SUS-AT-14; RES-AT-15 | A single emergency regime across authorities; every bound value (OD-01–OD-04). |
-| SR-4 | Evidence is independently recoverable and minimally disclosed. | D-021, D-022; INS-R1, INS-AT-14; QUA-C3; SUS-AT-07; RES-AT-05; Owner Control direction (protected evidence retrieval) | "Independently recoverable" as a universal requirement; the evidence specification (OD-09). |
+| SR-4 | Evidence is independently recoverable and minimally disclosed. | D-021, D-022; INS-R1, INS-AT-14; QUA-C3; SUS-AT-07; RES-AT-05; Owner Control direction (protected evidence retrieval) | Revised wording approved in [OD-09](#od-09--protected-evidence). Evidence under review is recoverable through an Owner-controlled path. |
 | SR-5 | Independent verification must be meaningful. | INS-R2, INS-AT-09; COR-C4; QUA-AT-10; R2; RES-AT-09, RES-AT-14; ACC-C2, ACC-AT-01, ACC-AT-15 | A definition of "meaningful" and who qualifies as independent (OD-05). |
 | SR-6 | Material uncertainty blocks autonomous action, except preapproved temporary containment. | X-2 / COR-C2 (Correction only); D-024; QUA-C1 | Extends a Correction-only rule to every authority; "material" undefined (OD-11); no containment is yet preapproved (OD-07, OD-14). Note QUA-C1: reasonable documented suspicion is sufficient for quarantine — the containment exception must preserve this. |
 | SR-7 | The Owner retains independent stop, recovery and succession. | D-023; X-4, X-5; Owner Control direction; SUS-AT-15; RES-AT-12; ACC-AT-10 | Largely restates approvals; the mechanism and its failure behavior are open (OD-10). |
@@ -56,14 +56,13 @@ Each item below is **OPEN — OWNER DECISION REQUIRED**. No value, mechanism or 
 | OD-03 | **Emergency notice:** who is notified, how quickly, through which channel, and how notice is authenticated. | F-A, SR-3; QUA-AT-12, SUS-AT-14; ACC-AT-16; OD-18 |
 | OD-04 | **Review deadlines and reviewer:** deadlines for retrospective emergency review, quarantine review (QUA-R1) and suspension review; who reviews; what happens when a deadline passes unreviewed, given that unsafe automatic release/restoration is prohibited (QUA-AT-02, SUS-AT-05). | F-A; OD-05, OD-08 |
 | OD-07 | **Approved procedures:** which procedures and standing boundaries to write and approve for L2, Q2, Q3 emergency, S1, S2, S3 emergency, R1 and R2. None is approved yet. Until one is, each level is limited to the path its source records:<br>• **L2, Q2, S2, R2** each have a separate approval path, as recorded: L2 "only under specifically approved procedure or separate approval" [S2]; Q2 "only under approved procedure or separate Owner approval" [S3]; S2 "under specifically approved procedure or separate Owner approval" [S4]; R2 "under approved procedure or separate Owner authorization" [S5].<br>• **Q3 and S3 emergency exceptions** require an approved procedure: "narrow temporary emergency actions under approved procedure" [S3]; "narrow temporary emergency containment under approved procedures" [S4]. No such procedure is approved, and no alternate path is recorded. The Owner-controlled Q3 path and the Owner-reserved S3 path are distinct from these exceptions.<br>• **S1 and R1** depend on standing prerequisites: S1 "within standing approved boundaries" [S4]; R1 "within standing approved procedures" [S5]. No alternate path is recorded. | All levels; OD-01–OD-04, OD-14 |
-| OD-09 | **Protected evidence specification:** provenance, access, retention, review and minimal disclosure (adopt, modify or reject SR-4). | F-E; Quarantine Vault; depends on O-004, O-007 |
 | OD-10 | **Enforcement interfaces and failure behavior:** how independent enforcement connects to each authority and how it behaves when enforcement or the Administrator fails. | F-F, F-H, F-N; SUS-AT-15, RES-AT-12, ACC-AT-12; Owner Control and Governance Assurance directions |
 | OD-11 | **Materiality and severity thresholds:** definitions of "serious threat", "credible risk", "material incident" and "material" correction/finding/uncertainty. | SR-6; COR-C4, R2, RES-C3, INS-AT-09, INS-AT-12, INS-AT-13 |
 | OD-12 | **Acceptance test design and pass thresholds** for the 87 scenarios; when tests may be implemented (requires separate authorization). | Charter §10; O-010 |
 | OD-13 | **Resource, retry and loop budgets** for inspections, corrections, suspension and recovery loops. | F-L; INS-AT-07, INS-AT-16, COR-AT-04, SUS-AT-08, RES-AT-06, ACC-AT-13 |
 | OD-14 | **Owner unavailability:** which temporary protective containment, if any, is preapproved for when the Owner cannot be reached (adopt, modify or reject SR-6's exception). | F-M; D-024; OD-01, OD-07 |
 | OD-15 | **Approval validity:** how approvals are bound to scope/state and when they must be revalidated. | F-I; ACC-AT-05, COR-AT-10, SUS-AT-12 |
-| OD-16 | **Adoption of SR-3–SR-7:** adopt, modify or reject each remaining proposed shared rule. | All findings |
+| OD-16 | **Adoption of SR-3 and SR-5–SR-7:** adopt, modify or reject each remaining proposed shared rule. | All findings |
 | OD-17 | **Charter classification:** whether this charter is a Foundational or Controlled commitment, which determines its amendment track under D-024. | D-016, D-024; Charter §12 |
 | OD-18 | **Owner communication authentication** mechanism. | ACC-AT-04, ACC-AT-16; OD-03, OD-10 |
 
@@ -97,6 +96,18 @@ Record each restriction separately, including its scope, issuing authority, curr
 **Design verification:** The tabletop check covered quarantine clearance during an operator suspension, restoration from an older checkpoint, a review deadline during an overlapping restriction, and contradictory clearance records.
 
 **Open dependencies:** Storage and enforcement remain open under OD-10, O-004 and O-007. Emergency duration, renewal, notice and review remain open under OD-01–OD-04.
+
+### OD-09 — Protected evidence
+
+**Status:** Owner approved the revised SR-4 wording on 2026-11-23.
+
+Preserve original evidence and record its source, who captured it, when it was captured, and its verification status. Append corrections and changes in verification status to the history. Keep sensitive material in its authorized project or incident scope, and use references or redacted copies where sufficient.
+
+Give reviewers only the access needed for the case. Keep evidence under review recoverable through an Owner-controlled path. Suspend routine deletion for evidence tied to an open case. Set retention periods and disposal authority through a separately approved procedure.
+
+**Design verification:** The tabletop check covered correcting an incident record, review of the Administrator, sharing a scoped lesson across projects, and routine deletion coming due during an open case.
+
+**Open dependencies:** Storage and access enforcement remain open under O-004, O-007 and OD-10. Retention periods and disposal authority require a separately approved procedure.
 
 ## Drafting observations
 
