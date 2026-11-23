@@ -1,6 +1,6 @@
 # CHIMERA Administrator Charter — Oversight and Intervention Authority
 
-**Status:** Consolidated record of Owner-approved **charter design decisions** (2026-11-22). Prepared under CH-GOVERNANCE-02 (documentation only). This document becomes the repository's authoritative charter text only when the Owner approves its merge.
+**Status:** Consolidated record of Owner-approved **charter design decisions** (2026-11-22). Prepared under CH-GOVERNANCE-02 (documentation only). The consolidated text was merged in [CHIMERA PR #2](https://github.com/GenX-Shinobi/CHIMERA/pull/2) at `8279b92`.
 **Baseline:** `main` at `7b558f5563e06df601fdce5a911560cc94c72aec` (PR #1 merged 2026-11-22).
 **Related:** [Consistency register](CONSISTENCY_REGISTER.md) · [Decision register](DECISIONS.md) · [Memory architecture](MEMORY_ARCHITECTURE.md) · [Project memory](../MEMORY.md)
 
@@ -40,7 +40,7 @@ Each provision below was approved within at least one subject. It is listed here
 
 | ID | Provision | Source |
 |---|---|---|
-| X-1 | Correction, Quarantine, Suspension and Restoration each use three levels: standing authority (level 1); approved procedure or separate approval (level 2); Owner-reserved or Owner-controlled (level 3). Accountability uses three levels with independent review at level 2 and Owner reservation at level 3. Inspection is a single bounded read-only authority. | S1, S2, S3, S4, S5, S6 |
+| X-1 | Correction, Quarantine, Suspension and Restoration each use three levels. Apply the scope and conditions in §§5.1–8.1 for the relevant authority. Level 1 is bounded by existing authority or authorized scope for L1 and Q1, standing approved boundaries for S1, and standing approved procedures for R1. Accountability uses three levels with independent review at level 2 and Owner reservation at level 3. Inspection is a single bounded read-only authority. | S1, S2, S3, S4, S5, S6 |
 | X-2 | Uncertainty blocks autonomous correction. | S2 |
 | X-3 | Lower restoration levels cannot override higher containment restrictions. | S5 |
 | X-4 | No CHIMERA employee, including the Administrator, shall possess unilateral control over the mechanisms required to suspend its own operations. | S4 |
