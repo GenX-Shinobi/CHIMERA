@@ -24,7 +24,7 @@ Severity is as recorded in the audit. "Supporting approvals" are existing approv
 | F-F | HIGH | Independent enforcement interfaces and failure behavior are undefined. | X-11; SUS-AT-15; RES-AT-12; ACC-AT-12, ACC-AT-18; Owner Control and Governance Assurance directions | SR-7 | [Failure behavior approved](#od-10--control-verification-and-failure-behavior). Enforcement interfaces and mechanism **OPEN** under OD-10. |
 | F-G | Further | Delegation cannot bypass limits. | D-013; Correction principle (S2); COR-AT-06; SUS-AT-06 | SR-1 | Cross-authority rule approved in [OD-06](#od-06--cross-authority-classification). |
 | F-H | Further | Shared infrastructure cannot silently dissolve project isolation. | D-025; X-9; INS-AT-03; COR-AT-07; QUA-AT-08; RES-AT-10 | — | Principle approved; enforcement mechanism **OPEN** via OD-10; depends on O-004 |
-| F-I | Further | Stale approvals must be revalidated. | INS-AT-12; COR-AT-10; SUS-AT-12; RES-AT-08; ACC-AT-05, ACC-AT-11 | — | **OPEN — OWNER DECISION REQUIRED:** OD-15 |
+| F-I | Further | Stale approvals must be revalidated. | INS-AT-12; COR-AT-10; SUS-AT-12; RES-AT-08; ACC-AT-05, ACC-AT-11 | — | [Approval validity rule approved](#od-15--approval-validity). The enforcement mechanism remains open under OD-10. |
 | F-J | Further | Restored historical snapshots cannot revive revoked permissions. | RES-C2; RES-AT-03, RES-AT-08; Restoration principle (S5) | SR-2 | Addressed in approved design; rule approved in [OD-08](#od-08--overlapping-restrictions), mechanism **OPEN** under OD-10 |
 | F-K | Further | Logged claims are not automatically verified facts. | INS-L2; INS-AT-10; QUA-AT-11; ACC-AT-03; [Memory architecture](MEMORY_ARCHITECTURE.md#separate-chronological-integrity-layer) | — | Addressed in approved design; mechanism **OPEN** via O-007 |
 | F-L | Further | Governance loops need resource/retry budgets. | INS-AT-07, INS-AT-16; COR-AT-04; SUS-AT-08; RES-AT-06; ACC-AT-13 | — | **OPEN — OWNER DECISION REQUIRED:** OD-13 |
@@ -61,7 +61,6 @@ Each item below is **OPEN — OWNER DECISION REQUIRED**. No value, mechanism or 
 | OD-12 | **Acceptance test design and pass thresholds** for the 87 scenarios; when tests may be implemented (requires separate authorization). | Charter §10; O-010 |
 | OD-13 | **Resource, retry and loop budgets** for inspections, corrections, suspension and recovery loops. | F-L; INS-AT-07, INS-AT-16, COR-AT-04, SUS-AT-08, RES-AT-06, ACC-AT-13 |
 | OD-14 | **Owner unavailability:** which temporary protective containment, if any, is preapproved for when the Owner cannot be reached (adopt, modify or reject SR-6's exception). | F-M; D-024; OD-01, OD-07 |
-| OD-15 | **Approval validity:** how approvals are bound to scope/state and when they must be revalidated. | F-I; ACC-AT-05, COR-AT-10, SUS-AT-12 |
 | OD-16 | **Adoption of SR-3 and SR-5–SR-7:** adopt, modify or reject each remaining proposed shared rule. | All findings |
 | OD-17 | **Charter classification:** whether this charter is a Foundational or Controlled commitment, which determines its amendment track under D-024. | D-016, D-024; Charter §12 |
 | OD-18 | **Owner communication authentication** mechanism. | ACC-AT-04, ACC-AT-16; OD-03, OD-10 |
@@ -118,6 +117,18 @@ Material governance actions must use a control the Administrator cannot unilater
 If the control is unavailable or the outcome is uncertain, pause dependent actions and escalate to the Owner through a path that does not require the Administrator’s cooperation. Follow the existing rules for active restrictions. Unaffected work may continue within its existing authority.
 
 **Design verification:** The tabletop check covered a suspension that was acknowledged while access remained active, a partial restoration, and a control failure while the Administrator was unavailable. The mechanism remains open under OD-10. SR-7 remains a proposal under OD-16.
+
+### OD-15 — Approval validity
+
+**Status:** Owner approved the governance rule on 2026-11-23.
+
+Record the governing approval, the authorized action and scope, the target, any state or conditions the decision depends on, and whether it covers one action or repeated use. Before execution, verify that the approval is still in force, applies to the current state, and covers the intended action.
+
+If the approval was revoked, expired, already used for a completed one-time action, or no longer covers the current state, stop the affected action and seek fresh authorization. If a previous attempt’s outcome is uncertain, verify what took effect before retrying.
+
+**Design verification:** The tabletop check covered a PR gaining a commit after approval, replay after confirmed success, an uncertain outcome after a timeout, and a standing approval whose conditions still apply.
+
+**Open dependencies:** Owner authentication remains open under OD-18. The enforcement mechanism remains open under OD-10.
 
 ## Drafting observations
 
