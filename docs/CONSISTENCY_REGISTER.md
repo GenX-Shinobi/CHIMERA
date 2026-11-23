@@ -41,9 +41,9 @@ These seven rules originated as drafting proposals. Revised SR-1 is approved in 
 | SR-2 | Restrictions remain active until properly cleared. | X-3 / RES-C1; QUA-AT-02; SUS-AT-05; RES-AT-01 | Revised wording approved in [OD-08](#od-08--overlapping-restrictions). Each restriction retains its own clearance requirements. |
 | SR-3 | Emergency scope, duration, notification, review and renewal are bounded. | D-024; QUA-AT-12; SUS-AT-14; RES-AT-15 | A single emergency regime across authorities; every bound value (OD-01–OD-04). |
 | SR-4 | Evidence is independently recoverable and minimally disclosed. | D-021, D-022; INS-R1, INS-AT-14; QUA-C3; SUS-AT-07; RES-AT-05; Owner Control direction (protected evidence retrieval) | Revised wording approved in [OD-09](#od-09--protected-evidence). Evidence under review is recoverable through an Owner-controlled path. |
-| SR-5 | Independent verification must be meaningful. | INS-R2, INS-AT-09; COR-C4; QUA-AT-10; R2; RES-AT-09, RES-AT-14; ACC-C2, ACC-AT-01, ACC-AT-15 | A definition of "meaningful" and who qualifies as independent (OD-05). |
+| SR-5 | Independent verification must be meaningful. | INS-R2, INS-AT-09; COR-C4; QUA-AT-10; R2; RES-AT-09, RES-AT-14; ACC-C2, ACC-AT-01, ACC-AT-15 | [OD-05](#od-05--independent-review-of-administrator-conflicts) defines independence for Administrator conflicts. The broader reviewer requirements remain open under OD-16. |
 | SR-6 | Material uncertainty blocks autonomous action, except preapproved temporary containment. | X-2 / COR-C2 (Correction only); D-024; QUA-C1 | Extends a Correction-only rule to every authority; "material" undefined (OD-11); no containment is yet preapproved (OD-07, OD-14). Note QUA-C1: reasonable documented suspicion is sufficient for quarantine — the containment exception must preserve this. |
-| SR-7 | The Owner retains independent stop, recovery and succession. | D-023; X-4, X-5; Owner Control direction; SUS-AT-15; RES-AT-12; ACC-AT-10 | Largely restates approvals; the mechanism remains open under OD-10. The [approved failure behavior](#od-10--control-verification-and-failure-behavior) applies independently of SR-7 adoption. |
+| SR-7 | The Owner retains independent stop, recovery and succession. | D-023; X-4, X-5; Owner Control direction; SUS-AT-15; RES-AT-12; ACC-AT-10 | The charter establishes independent Owner stop and succession as design directions. [OD-09](#od-09--protected-evidence) requires an Owner-controlled evidence recovery path, and [OD-10](#od-10--control-verification-and-failure-behavior) requires escalation independent of Administrator cooperation. Mechanism selection and broader adoption remain open under OD-10 and OD-16. |
 
 ## Owner decisions required
 
@@ -63,7 +63,7 @@ Each item below is **OPEN — OWNER DECISION REQUIRED**. No value, mechanism or 
 | OD-14 | **Owner unavailability:** which temporary protective containment, if any, is preapproved for when the Owner cannot be reached (adopt, modify or reject SR-6's exception). | F-M; D-024; OD-01, OD-07 |
 | OD-16 | **Adoption of SR-3 and SR-5–SR-7:** adopt, modify or reject each remaining proposed shared rule. | All findings |
 | OD-17 | **Charter classification:** whether this charter is a Foundational or Controlled commitment, which determines its amendment track under D-024. | D-016, D-024; Charter §12 |
-| OD-18 | **Owner communication authentication mechanism:** select the approval and recovery channels and the mechanism that satisfies the [approved design requirement](#od-18--owner-approval-authentication). | ACC-AT-04, ACC-AT-16; OD-03, OD-10, OD-15 |
+| OD-18 | **Owner communication authentication mechanism:** select the broader Owner communication channels and implement the mechanism that satisfies the [approved design requirement and Founder credential model](#od-18--owner-approval-authentication). | ACC-AT-04, ACC-AT-16; OD-03, OD-10, OD-15 |
 
 ## Approved Owner decisions
 
@@ -132,7 +132,11 @@ If the approval was revoked, expired, already used for a completed one-time acti
 
 ### OD-18 — Owner approval authentication
 
-**Status:** Owner approved this design requirement on 2026-11-23. Channel selection and implementation require separate approval.
+**Status:** Owner approved this design requirement on 2026-11-23. The Founder credential model was already approved.
+
+**Approved Founder credential model:** Enroll one primary key and one recovery key, with an offline single-use recovery code. The primary key authorizes routine Founder actions bound to the specific action and project. Either enrolled key can freeze Founder actions. Replacing either key requires the surviving key, the current recovery code, and proof of possession of the exact replacement key. A freeze invalidates pending Founder approvals and leaves routine work available through ordinary sign-in. Ordinary account recovery grants no Founder authority. Replacement must commit revocation of the old key, enrollment of its replacement, invalidation of pending Founder approvals, and recovery-code rotation together. Replacement leaves an active freeze in effect. Unfreeze requires both current keys after the current recovery code has been acknowledged. Android and desktop have equal standing under these rules.
+
+**Open scope:** Broader Owner approval and recovery communication channel selection, production implementation, total-loss handling, and ordinary-work behavior after an integrity alarm still require separate decisions. H0 physical-key validation remains paused.
 
 Before acting on an Owner approval, verify the original decision through an Owner-designated channel and link the record to the action it authorizes. If the record is unavailable, the sender’s authority is uncertain, or the channel may be compromised, pause the affected action and seek confirmation through a separately designated Owner-controlled path.
 
