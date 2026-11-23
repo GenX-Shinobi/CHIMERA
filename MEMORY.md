@@ -3,7 +3,7 @@
 **Purpose:** Durable, human-readable continuity record.  
 **Authority:** This file records context and decisions; it does not grant permissions or override statutes.  
 **Repository:** https://github.com/GenX-Shinobi/CHIMERA  
-**Checkpoint:** 2026-11-22 — CH-FOUNDATION-01 merged (`main` `7b558f5`); Administrator charter design approved. CH-GOVERNANCE-02 documentation consolidation in draft.
+**Checkpoint:** 2026-11-22 — CH-FOUNDATION-01 merged (`main` `7b558f5`); Administrator charter design approved. CH-GOVERNANCE-02 documentation merged on 2026-11-23 (`8279b92`).
 
 ## Identity and mission
 - Project: **CHIMERA** — **Controlled Hierarchical Intelligence, Modularity, Efficiency, Resilience & Adaptation**. The acronym expansion is formally approved.
