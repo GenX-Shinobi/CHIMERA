@@ -33,7 +33,7 @@ Severity is as recorded in the audit. "Supporting approvals" are existing approv
 
 ## Shared consolidation rules
 
-These seven rules originated as drafting proposals. Revised SR-1 is approved in [OD-06](#od-06--cross-authority-classification). Revised SR-2 is approved in [OD-08](#od-08--overlapping-restrictions). Revised SR-4 is approved in [OD-09](#od-09--protected-evidence). Revised SR-3 is approved under [OD-16](#od-16--adoption-of-sr-3). Revised SR-5 is approved under [OD-16](#od-16--adoption-of-sr-5). Revised SR-6 is approved under [OD-16](#od-16--adoption-of-sr-6). SR-7 remains **PROPOSED — NOT APPROVED** and awaits an Owner decision under OD-16.
+These seven rules originated as drafting proposals. Revised SR-1 is approved in [OD-06](#od-06--cross-authority-classification). Revised SR-2 is approved in [OD-08](#od-08--overlapping-restrictions). Revised SR-4 is approved in [OD-09](#od-09--protected-evidence). Revised SR-3 is approved under [OD-16](#od-16--adoption-of-sr-3). Revised SR-5 is approved under [OD-16](#od-16--adoption-of-sr-5). Revised SR-6 is approved under [OD-16](#od-16--adoption-of-sr-6). Revised SR-7 is approved under [OD-16](#od-16--adoption-of-sr-7), completing disposition of the seven shared rules.
 
 | ID | Proposed rule (as recorded) | Supporting approvals | Novel element requiring Owner decision |
 |---|---|---|---|
@@ -43,7 +43,7 @@ These seven rules originated as drafting proposals. Revised SR-1 is approved in 
 | SR-4 | Evidence is independently recoverable and minimally disclosed. | D-021, D-022; INS-R1, INS-AT-14; QUA-C3; SUS-AT-07; RES-AT-05; Owner Control direction (protected evidence retrieval) | Revised wording approved in [OD-09](#od-09--protected-evidence). Evidence under review is recoverable through an Owner-controlled path. |
 | SR-5 | Independent verification must be meaningful. | INS-R2, INS-AT-09; COR-C4; QUA-AT-10; R2; RES-AT-09, RES-AT-14; ACC-C2, ACC-AT-01, ACC-AT-15 | [OD-05](#od-05--independent-review-of-administrator-conflicts) defines independence for Administrator conflicts. [Revised SR-5 approved under OD-16](#od-16--adoption-of-sr-5). Live-state verification remains open under OD-10. |
 | SR-6 | Pause the affected autonomous action under material uncertainty. Temporary protective containment during Owner unavailability requires an explicitly preapproved procedure. | X-2 / COR-C2; D-024; QUA-C1; SR-3 | [Revised SR-6 approved under OD-16](#od-16--adoption-of-sr-6). Materiality thresholds and preapproved containment remain open under OD-11, OD-07, and OD-14. |
-| SR-7 | The Owner retains independent stop, recovery and succession. | D-023; X-4, X-5; Owner Control direction; SUS-AT-15; RES-AT-12; ACC-AT-10 | The charter establishes independent Owner stop and succession as design directions. [OD-09](#od-09--protected-evidence) requires an Owner-controlled evidence recovery path, and [OD-10](#od-10--control-verification-and-failure-behavior) requires escalation independent of Administrator cooperation. Mechanism selection and broader adoption remain open under OD-10 and OD-16. |
+| SR-7 | The Owner retains independent stop, recovery and succession. | D-023; X-4, X-5; Owner Control direction; SUS-AT-15; RES-AT-12; ACC-AT-10 | The charter establishes independent Owner stop and succession as design directions. [OD-09](#od-09--protected-evidence) requires an Owner-controlled evidence recovery path, and [OD-10](#od-10--control-verification-and-failure-behavior) requires escalation independent of Administrator cooperation. [Revised SR-7 approved under OD-16](#od-16--adoption-of-sr-7). Enforcement, total-loss handling, and the detailed succession procedure remain open. |
 
 ## Owner decisions required
 
@@ -57,7 +57,6 @@ Each item below is **OPEN — OWNER DECISION REQUIRED**. No value, mechanism or 
 | OD-12 | **Acceptance test design and pass thresholds** for the 87 scenarios; when tests may be implemented (requires separate authorization). | Charter §10; O-010 |
 | OD-13 | **Resource, retry and loop budgets** for inspections, corrections, suspension and recovery loops. | F-L; INS-AT-07, INS-AT-16, COR-AT-04, SUS-AT-08, RES-AT-06, ACC-AT-13 |
 | OD-14 | **Owner unavailability:** which temporary protective containment, if any, is preapproved for when the Owner cannot be reached (adopt, modify or reject SR-6's exception). | F-M; D-024; OD-01, OD-07 |
-| OD-16 | **Adoption of SR-7:** adopt, modify or reject the remaining proposed shared rule. | All findings |
 | OD-17 | **Charter classification:** whether this charter is a Foundational or Controlled commitment, which determines its amendment track under D-024. | D-016, D-024; Charter §12 |
 | OD-18 | **Owner communication authentication mechanism:** select the broader Owner communication channels and implement the mechanism that satisfies the [approved design requirement and Founder credential model](#od-18--owner-approval-authentication). | ACC-AT-04, ACC-AT-16; OD-03, OD-10, OD-15 |
 
@@ -112,7 +111,7 @@ Each item below is **OPEN — OWNER DECISION REQUIRED**. No value, mechanism or 
 3. **Keep unresolved cases open.** The reviewer sends findings to the Owner, who retains the final decision. If no qualified reviewer or adequate evidence is available, the case stays open with the Owner. Actions that require completed independent review wait.
 4. **Handle active restrictions under their existing rules.** If a restriction is already in place, follow its applicable duration, renewal, review, and escalation requirements. A pending review alone provides no basis to extend or release it. Refer any unresolved authority question to the Owner.
 
-**Design verification:** Tabletop scenarios covered a disputed conflict, reviewer involvement or dependence, inadequate evidence, reviewer unavailability, and delayed review during an active restriction. Enforcement remains open under OD-10. Initial duration and renewal are approved under OD-01 and OD-02. Notice design is approved under OD-03. Independent review design is approved under OD-04. Channel selection remains open under OD-18. [Revised SR-5 is approved under OD-16](#od-16--adoption-of-sr-5). SR-7 remains a proposal.
+**Design verification:** Tabletop scenarios covered a disputed conflict, reviewer involvement or dependence, inadequate evidence, reviewer unavailability, and delayed review during an active restriction. Enforcement remains open under OD-10. Initial duration and renewal are approved under OD-01 and OD-02. Notice design is approved under OD-03. Independent review design is approved under OD-04. Channel selection remains open under OD-18. [Revised SR-5 is approved under OD-16](#od-16--adoption-of-sr-5). [Revised SR-7 is approved under OD-16](#od-16--adoption-of-sr-7).
 
 ### OD-06 — Cross-authority classification
 
@@ -152,7 +151,7 @@ Material governance actions must use a control the Administrator cannot unilater
 
 If the control is unavailable or the outcome is uncertain, pause dependent actions and escalate to the Owner through a path that does not require the Administrator’s cooperation. Follow the existing rules for active restrictions. Unaffected work may continue within its existing authority.
 
-**Design verification:** The tabletop check covered a suspension that was acknowledged while access remained active, a partial restoration, and a control failure while the Administrator was unavailable. The mechanism remains open under OD-10. SR-7 remains a proposal under OD-16.
+**Design verification:** The tabletop check covered a suspension that was acknowledged while access remained active, a partial restoration, and a control failure while the Administrator was unavailable. The mechanism remains open under OD-10. [Revised SR-7 is approved under OD-16](#od-16--adoption-of-sr-7).
 
 ### OD-15 — Approval validity
 
@@ -186,7 +185,7 @@ Changes to approval channels and recovery paths require an authenticated Owner d
 
 **Authority and verification:** A notice acknowledgment grants no renewal. Expiry and overdue review grant no restoration authority. Any continuing restriction requires separate valid authority, and overlapping restrictions retain their OD-08 clearance requirements. The combined tabletop case covered acknowledgment without verified renewal: authority expired at 60 minutes and independent review remained due at 24 hours.
 
-**Open dependencies:** Procedure approval, channel selection, enforcement, and timing validation remain pending. [Revised SR-5 is approved under OD-16](#od-16--adoption-of-sr-5). [Revised SR-6 is approved under OD-16](#od-16--adoption-of-sr-6). OD-16 remains open for SR-7.
+**Open dependencies:** Procedure approval, channel selection, enforcement, and timing validation remain pending. [Revised SR-5 is approved under OD-16](#od-16--adoption-of-sr-5). [Revised SR-6 is approved under OD-16](#od-16--adoption-of-sr-6). [Revised SR-7 is approved under OD-16](#od-16--adoption-of-sr-7).
 
 ### OD-16 — Adoption of SR-5
 
@@ -194,7 +193,7 @@ Changes to approval channels and recovery paths require an authenticated Owner d
 
 **Evidence and unresolved review:** Give the reviewer authorized access to protected evidence and a way to verify actual state. A report from the agent that requested or applied the action is insufficient on its own. If an eligible reviewer is unavailable, evidence is incomplete, or observed state conflicts with the record, record the reason, escalate to the Owner, and keep the review open. Follow-up actions require their own authority.
 
-**Design verification and open dependencies:** Tabletop cases covered a reported suspension with access still active and a review relying solely on the agent's report. Record and escalate the enforcement failure in the first case. Leave the outcome unverified in the second. The mechanism for independent live-state verification remains open under OD-10. [Revised SR-6 is approved under OD-16](#od-16--adoption-of-sr-6). OD-16 remains open for SR-7.
+**Design verification and open dependencies:** Tabletop cases covered a reported suspension with access still active and a review relying solely on the agent's report. Record and escalate the enforcement failure in the first case. Leave the outcome unverified in the second. The mechanism for independent live-state verification remains open under OD-10. [Revised SR-6 is approved under OD-16](#od-16--adoption-of-sr-6). [Revised SR-7 is approved under OD-16](#od-16--adoption-of-sr-7).
 
 ### OD-16 — Adoption of SR-6
 
@@ -205,6 +204,18 @@ Changes to approval channels and recovery paths require an authenticated Owner d
 **Owner unavailability:** Temporary protective containment requires an explicitly preapproved procedure whose conditions are met. Owner silence grants no authority. This decision grants no preapproval. OD-07 and OD-14 remain open for eligible procedures and actions. Emergency authority remains subject to SR-3 timing, notice, and review.
 
 **Design verification:** Tabletop cases covered a suspected threat with uncertain resource scope and an unreachable Owner without an applicable preapproved procedure. In both cases, pause the proposed action and escalate. Existing restrictions retain their own authority and expiry.
+
+### OD-16 — Adoption of SR-7
+
+**Owner decision (2026-11-23):** The Owner must be able to stop affected operations, recover control, and authorize succession independently of the Administrator's cooperation.
+
+**Stop:** Provide an independently controlled Owner path to stop affected operations. Verify the actual effect. If the outcome cannot be verified, record it as unverified and escalate independently of the Administrator.
+
+**Recovery:** Preserve protected evidence and the audit trail. Apply the approved Founder credential and freeze rules under OD-18. Restoration requires separate authorization and verification of the actual state.
+
+**Succession:** Require an explicit, previously authorized succession process. Owner silence, Administrator unavailability, and ordinary account recovery confer no Founder authority. Record and independently verify any transfer of authority.
+
+**Design verification and open dependencies:** The tabletop check covered an acknowledged stop while operations continued and loss of both Founder keys. In the first case, record and escalate the enforcement failure. In the second, the recovery code alone cannot authorize replacement or transfer. The enforcement mechanism, total-loss handling, and detailed succession procedure remain open. Adoption of SR-7 resolves the final shared-rule disposition under OD-16.
 
 ## Drafting observations
 
