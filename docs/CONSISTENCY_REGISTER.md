@@ -16,7 +16,7 @@ Severity is as recorded in the audit. "Supporting approvals" are existing approv
 
 | ID | Severity | Finding (as recorded) | Supporting approvals | Proposed rule | Status / open decisions |
 |---|---|---|---|---|---|
-| F-A | CRITICAL | Emergency authority lacks unified duration, renewal, notification, escalation and review deadlines. | D-024; QUA-AT-02, QUA-AT-12; SUS-AT-05, SUS-AT-14; RES-AT-15; Q3, S3 emergency exceptions | SR-3 | [Initial duration approved](#od-01--emergency-duration). [Renewal approved](#od-02--emergency-renewal). [Notice design approved](#od-03--emergency-notice). [Review design approved](#od-04--independent-review-deadlines). Implementation dependencies remain open. |
+| F-A | CRITICAL | Emergency authority lacks unified duration, renewal, notification, escalation and review deadlines. | D-024; QUA-AT-02, QUA-AT-12; SUS-AT-05, SUS-AT-14; RES-AT-15; Q3, S3 emergency exceptions | SR-3 | [Initial duration approved](#od-01--emergency-duration). [Renewal approved](#od-02--emergency-renewal). [Notice design approved](#od-03--emergency-notice). [Review design approved](#od-04--independent-review-deadlines). [Revised SR-3 approved](#od-16--adoption-of-sr-3). Implementation dependencies remain open. |
 | F-B | CRITICAL | Cross-authority action classification/decomposition can launder unauthorized changes. | COR-C1, COR-AT-01, COR-AT-02; Correction principle (S2); ACC-AT-17 | SR-1 | Revised rule approved in [OD-06](#od-06--cross-authority-classification). |
 | F-C | CRITICAL | Administrator conflicts of interest need an independently controlled reviewer/evidence and Owner fallback. | X-4, X-5, X-6; INS-R2, INS-AT-09; COR-C4; QUA-AT-07; SUS-AT-01; RES-AT-04, RES-AT-14; A2; ACC-AT-15 | SR-5, SR-7 | [OD-05 approved](#od-05--independent-review-of-administrator-conflicts). Enforcement remains open under OD-10. |
 | F-D | HIGH | Containment and restoration require authoritative shared state and restriction precedence. | X-3 / RES-C1; QUA-AT-02; SUS-AT-05; RES-AT-01 | SR-2 | Revised rule approved in [OD-08](#od-08--overlapping-restrictions). Storage and enforcement remain open. |
@@ -31,15 +31,15 @@ Severity is as recorded in the audit. "Supporting approvals" are existing approv
 | F-M | Further | Owner unavailability allows only preapproved temporary protective containment. | D-024; Q3, S3 emergency exceptions | SR-6 | **OPEN — OWNER DECISION REQUIRED:** OD-14, OD-07 |
 | F-N | Further | Claimed suspension must be grounded in actual enforcement. | SUS-C6; SUS-AT-15; ACC-AT-12; X-11 | — | Addressed in approved design; mechanism **OPEN** via OD-10 |
 
-## Proposed shared consolidation rules
+## Shared consolidation rules
 
-These seven rules originated as drafting proposals. Revised SR-1 is approved in [OD-06](#od-06--cross-authority-classification). Revised SR-2 is approved in [OD-08](#od-08--overlapping-restrictions). Revised SR-4 is approved in [OD-09](#od-09--protected-evidence). SR-3 and SR-5–SR-7 remain **PROPOSED — NOT APPROVED** and await Owner decisions under OD-16.
+These seven rules originated as drafting proposals. Revised SR-1 is approved in [OD-06](#od-06--cross-authority-classification). Revised SR-2 is approved in [OD-08](#od-08--overlapping-restrictions). Revised SR-4 is approved in [OD-09](#od-09--protected-evidence). Revised SR-3 is approved under [OD-16](#od-16--adoption-of-sr-3). SR-5–SR-7 remain **PROPOSED — NOT APPROVED** and await Owner decisions under OD-16.
 
 | ID | Proposed rule (as recorded) | Supporting approvals | Novel element requiring Owner decision |
 |---|---|---|---|
 | SR-1 | The highest applicable authority prevails across direct, cumulative and delegated actions. | D-023; Correction principle (S2); COR-C1, COR-AT-02, COR-AT-06 | Revised wording approved in [OD-06](#od-06--cross-authority-classification) and governs direct, cumulative and delegated actions. |
 | SR-2 | Restrictions remain active until properly cleared. | X-3 / RES-C1; QUA-AT-02; SUS-AT-05; RES-AT-01 | Revised wording approved in [OD-08](#od-08--overlapping-restrictions). Each restriction retains its own clearance requirements. |
-| SR-3 | Emergency scope, duration, notification, review and renewal are bounded. | D-024; QUA-AT-12; SUS-AT-14; RES-AT-15 | [Initial duration approved](#od-01--emergency-duration). [Renewal approved](#od-02--emergency-renewal). [Notice design approved](#od-03--emergency-notice). [Review design approved](#od-04--independent-review-deadlines). Adoption of SR-3 as a shared rule remains open under OD-16. Channel selection remains open under OD-18. |
+| SR-3 | Emergency scope, duration, notification, review and renewal are bounded. | D-024; QUA-AT-12; SUS-AT-14; RES-AT-15 | [Initial duration approved](#od-01--emergency-duration). [Renewal approved](#od-02--emergency-renewal). [Notice design approved](#od-03--emergency-notice). [Review design approved](#od-04--independent-review-deadlines). [Revised SR-3 approved under OD-16](#od-16--adoption-of-sr-3). Channel selection remains open under OD-18. |
 | SR-4 | Evidence is independently recoverable and minimally disclosed. | D-021, D-022; INS-R1, INS-AT-14; QUA-C3; SUS-AT-07; RES-AT-05; Owner Control direction (protected evidence retrieval) | Revised wording approved in [OD-09](#od-09--protected-evidence). Evidence under review is recoverable through an Owner-controlled path. |
 | SR-5 | Independent verification must be meaningful. | INS-R2, INS-AT-09; COR-C4; QUA-AT-10; R2; RES-AT-09, RES-AT-14; ACC-C2, ACC-AT-01, ACC-AT-15 | [OD-05](#od-05--independent-review-of-administrator-conflicts) defines independence for Administrator conflicts. The broader reviewer requirements remain open under OD-16. |
 | SR-6 | Material uncertainty blocks autonomous action, except preapproved temporary containment. | X-2 / COR-C2 (Correction only); D-024; QUA-C1 | Extends a Correction-only rule to every authority; "material" undefined (OD-11); no containment is yet preapproved (OD-07, OD-14). Note QUA-C1: reasonable documented suspicion is sufficient for quarantine — the containment exception must preserve this. |
@@ -57,7 +57,7 @@ Each item below is **OPEN — OWNER DECISION REQUIRED**. No value, mechanism or 
 | OD-12 | **Acceptance test design and pass thresholds** for the 87 scenarios; when tests may be implemented (requires separate authorization). | Charter §10; O-010 |
 | OD-13 | **Resource, retry and loop budgets** for inspections, corrections, suspension and recovery loops. | F-L; INS-AT-07, INS-AT-16, COR-AT-04, SUS-AT-08, RES-AT-06, ACC-AT-13 |
 | OD-14 | **Owner unavailability:** which temporary protective containment, if any, is preapproved for when the Owner cannot be reached (adopt, modify or reject SR-6's exception). | F-M; D-024; OD-01, OD-07 |
-| OD-16 | **Adoption of SR-3 and SR-5–SR-7:** adopt, modify or reject each remaining proposed shared rule. | All findings |
+| OD-16 | **Adoption of SR-5–SR-7:** adopt, modify or reject each remaining proposed shared rule. | All findings |
 | OD-17 | **Charter classification:** whether this charter is a Foundational or Controlled commitment, which determines its amendment track under D-024. | D-016, D-024; Charter §12 |
 | OD-18 | **Owner communication authentication mechanism:** select the broader Owner communication channels and implement the mechanism that satisfies the [approved design requirement and Founder credential model](#od-18--owner-approval-authentication). | ACC-AT-04, ACC-AT-16; OD-03, OD-10, OD-15 |
 
@@ -71,7 +71,7 @@ Each item below is **OPEN — OWNER DECISION REQUIRED**. No value, mechanism or 
 
 **Design verification:** Tabletop review covered an employee going offline, a restart, relabeling, an unverifiable clock, and an unreachable Owner at expiry. Silence grants no extension. Runtime enforcement and the suitability of the 60-minute response window still require validation.
 
-**Open dependencies:** [Renewal is governed by OD-02](#od-02--emergency-renewal). [Notice design is governed by OD-03](#od-03--emergency-notice). [Independent review is governed by OD-04](#od-04--independent-review-deadlines). Channel selection remains open under OD-18. Procedure approval remains under OD-07. The enforcement mechanism remains under OD-10, and SR-3 remains a proposal under OD-16.
+**Open dependencies:** [Renewal is governed by OD-02](#od-02--emergency-renewal). [Notice design is governed by OD-03](#od-03--emergency-notice). [Independent review is governed by OD-04](#od-04--independent-review-deadlines). Channel selection remains open under OD-18. Procedure approval remains under OD-07. The enforcement mechanism remains under OD-10, and [Revised SR-3 is approved under OD-16](#od-16--adoption-of-sr-3).
 
 ### OD-02 — Emergency renewal
 
@@ -91,7 +91,7 @@ Each item below is **OPEN — OWNER DECISION REQUIRED**. No value, mechanism or 
 
 **Delivery failure:** If the primary channel fails or receipt is unconfirmed after five minutes, try the approved fallback and log the attempt. If neither channel works, flag the failure for independent review. The existing expiry deadline still applies.
 
-**Design verification and open dependencies:** Tabletop cases covered a spoofed notice, primary-channel failure, and an unreachable Owner. Validate the five-minute target and delivery behavior before implementation acceptance. Channel selection remains open under OD-18, independent review is governed by [OD-04](#od-04--independent-review-deadlines), and SR-3 remains a proposal under OD-16.
+**Design verification and open dependencies:** Tabletop cases covered a spoofed notice, primary-channel failure, and an unreachable Owner. Validate the five-minute target and delivery behavior before implementation acceptance. Channel selection remains open under OD-18, independent review is governed by [OD-04](#od-04--independent-review-deadlines), and [Revised SR-3 is approved under OD-16](#od-16--adoption-of-sr-3).
 
 ### OD-04 — Independent review deadlines
 
@@ -179,6 +179,14 @@ Before acting on an Owner approval, verify the original decision through an Owne
 Changes to approval channels and recovery paths require an authenticated Owner decision. If no trusted path is available, keep the approval pending and follow any existing, separately approved containment rules.
 
 **Design verification:** The tabletop check covered a forwarded screenshot, a reported channel compromise, a channel change bundled with a release approval, and an exact-PR approval checked under OD-15.
+
+### OD-16 — Adoption of SR-3
+
+**Owner decision (2026-11-23):** Adopt revised SR-3 as the shared emergency containment rule for Q3 and S3 emergency exceptions and D-024 temporary restrictions, within an approved procedure. Apply OD-01's 60-minute initial cap and deadline-verification requirements, OD-02's single verified Owner-approved renewal of up to 30 minutes, OD-03's five-minute Owner notice and verification and fallback requirements, and OD-04's 24-hour independent review and overdue escalation.
+
+**Authority and verification:** A notice acknowledgment grants no renewal. Expiry and overdue review grant no restoration authority. Any continuing restriction requires separate valid authority, and overlapping restrictions retain their OD-08 clearance requirements. The combined tabletop case covered acknowledgment without verified renewal: authority expired at 60 minutes and independent review remained due at 24 hours.
+
+**Open dependencies:** Procedure approval, channel selection, enforcement, and timing validation remain pending. OD-16 remains open for SR-5, SR-6, and SR-7.
 
 ## Drafting observations
 
