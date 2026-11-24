@@ -37,7 +37,7 @@ Build a free-to-use, open-source, platform-independent framework for creating, g
 - [ ] Build a small proof of concept only after the release-first pause is lifted and an Owner-approved milestone is set.
 
 ### Phase 2 — CHIMERA Administrator
-- [ ] Finalize Administrator charter, inspection, correction, quarantine, suspension, restoration and escalation boundaries. *Charter design consolidated; operational thresholds, procedures and enforcement mechanisms remain open (OD-01–OD-18).*
+- [ ] Finalize Administrator charter, inspection, correction, quarantine, suspension, restoration and escalation boundaries. *Charter design consolidated and all seven revised shared rules adopted. See the [consistency register](docs/CONSISTENCY_REGISTER.md#owner-decisions-required) for remaining decisions, procedures and enforcement work.*
 - [ ] Begin with ChatGPT as initial Administrator while keeping the role replaceable.
 - [ ] Validate oversight without self-authorizing changes or granting permissions.
 - [ ] Test temporary containment and evidence-preserving rollback. *The charter's 87 adversarial scenarios are future acceptance criteria; none implemented or executed.*
