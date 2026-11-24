@@ -1,9 +1,13 @@
 # CHIMERA — Session Handoff
 
-**Checkpoint:** 2026-11-23 — Governance stress-test audit (documentation only)  
+**Checkpoint:** 2026-11-23 — OD-10 design notes and consolidated pause (documentation only)  
 **Repository:** https://github.com/GenX-Shinobi/CHIMERA  
 **Current state:** CH-FOUNDATION-01 merged. Administrator charter design (six subjects, 87 adversarial scenarios) Owner-approved on 2026-11-22. CH-GOVERNANCE-02 consolidates it into the [Administrator charter](ADMINISTRATOR_CHARTER.md) and [consistency register](CONSISTENCY_REGISTER.md) in [CHIMERA PR #2](https://github.com/GenX-Shinobi/CHIMERA/pull/2), merged at `8279b92`. Implementation, enforcement, testing and pilot remain unauthorized.  
 **GitHub (verified 2026-11-23):** [CHIMERA PR #2](https://github.com/GenX-Shinobi/CHIMERA/pull/2) merged at `8279b92`. A post-merge documentation review checked all six authorities against the recorded Owner approvals and identified two clarifications: X-1 needed to reflect the S1 and R1 prerequisites, and this checkpoint needed to reflect the merge. Verify live heads before acting.
+
+## Current pause checkpoint
+
+The latest merged design reference is [CHIMERA PR #20](https://github.com/GenX-Shinobi/CHIMERA/pull/20) at `cac6af6`. The Owner approved documenting [earned autonomy and the candidate OD-10 pilot](CHIMERA_POSITIONING_AND_DEVELOPMENT.md#earned-autonomy-and-sustainable-adoption) for design consideration. The industry comparison and private prototype report review inform that proposal. Architecture selection, engineering dispatch, runtime testing, H0 and Prompt Builder integration require separate authorization.
 
 ## Owner-approved priority order
 1. Complete documentation maintenance and session handoffs for both repositories.
@@ -45,4 +49,4 @@ The [positioning and development notes](CHIMERA_POSITIONING_AND_DEVELOPMENT.md) 
 6. Do not claim background work or local workspace state unless actually checked.
 
 ## Single next action
-The Owner may take up the open decisions in the [consistency register](CONSISTENCY_REGISTER.md#owner-decisions-required). Release, implementation and pilot activation require separate Owner approval.
+On **Resume**, verify the current documentation review and use the candidate OD-10 pilot to frame one design decision about the action boundary and independent verification. Consult the [consistency register](CONSISTENCY_REGISTER.md#owner-decisions-required) for OD-07, OD-10 and OD-12 prerequisites. Use the private workspace handoff for restricted evidence and other paused work.
