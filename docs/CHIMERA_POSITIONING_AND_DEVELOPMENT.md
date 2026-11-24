@@ -34,3 +34,18 @@ A functional subtitle such as **Governance for AI Workforces** could help distin
 - **Worker.** Follow the assigned scope, output schema and tool permissions. Stop and escalate when an action exceeds those limits.
 
 These are prospective evaluation cases under OD-12. They establish no role appointments, acceptance thresholds, implementation commitments or dependency on H0. The [consistency register](CONSISTENCY_REGISTER.md) governs decision status. The [stress-test audit](audits/2026-11-23-governance-stress-test.md) records baseline verification and follow-up cases.
+
+## Earned autonomy and sustainable adoption
+
+The Owner approved recording these ideas for design consideration. They are candidate design inputs.
+
+- **Scope certifications by capability.** Independently verified performance, accurate reporting and correct escalation can qualify an agent for an additional bounded capability. Each grant identifies the agent configuration, project, allowed actions and review conditions. Grants can accumulate only within Owner-approved standing policy and existing authority limits. A performance record supplies evidence. Authority comes from the approved grant.
+- **Support review, demotion and revocation.** Material changes to model, tools or workflow trigger review. Ordinary mistakes can warrant coaching or narrower permissions. Serious integrity concerns can trigger containment under existing rules. Apply restrictions at the action boundary, retain evidence and revalidate pending work. Agents cannot certify themselves. Reserved decisions continue through their existing approval path.
+- **Measure Owner load.** Compare interruptions, review minutes and rework with per-action approval. Routine work can be summarized in a digest and consequential exceptions escalated. Include the time spent granting, reviewing and revoking certifications.
+- **Keep the core free and open.** Preserve self-hosting, verification, evidence export, and essential stop and recovery controls in the proposed free core. Optional deployment, integration, managed hosting and support are future sustainability options.
+
+### Candidate OD-10 pilot
+
+Use one agent, one isolated project and one reversible action. Compare per-action approval with one scoped standing grant. Withdraw the grant through an authorized stop, independently verify rejection of a subsequent action and confirm the target state stayed unchanged. Record Owner touches and reviewer effort. Include a pending action in the stop check. Use an action boundary outside the agent's control. Resolve OD-07 standing authority, OD-10 enforcement and OD-12 acceptance criteria before execution.
+
+A report-level prototype review found action-bound approval, freeze and revocation tested with virtual authenticators. The maintained verifier run and physical-device acceptance remain pending. The prototype findings inform design without establishing a verified stop for an agent workflow. Pilot execution requires separate Owner authorization.
