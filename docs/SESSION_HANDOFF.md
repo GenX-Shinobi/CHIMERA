@@ -30,6 +30,8 @@
 ## Governance audit checkpoint
 The [consistency register](CONSISTENCY_REGISTER.md) records adopted rules and pending decisions. At the November 23 audit baseline, ten operational decisions had recorded outcomes outside the open-items table. Six decisions remained open (OD-07, OD-11–14 and OD-17), and two had approved requirements with work remaining (OD-10 and OD-18). The [governance stress-test audit](audits/2026-11-23-governance-stress-test.md) records the verified findings and follow-up cases. The separate approver for an L2-only correction remains an Owner question under OD-07.
 
+The [positioning and development notes](CHIMERA_POSITIONING_AND_DEVELOPMENT.md) retain the external brief's public messaging draft and candidate development and evaluation questions for future Owner review.
+
 ## Exploratory backlog — not active implementation
 - Interactive Workforce Designer: guided workforce/workflow analysis and proposed staffing/role/task plan. CHIMERA may draft recommendations and configuration but cannot appoint/activate employees or grant permissions without Owner approval.
 - Future Prompt Builder roadmap items may be used as CHIMERA test material only after v5.4.0 is publicly released and a bounded test plan is approved.
